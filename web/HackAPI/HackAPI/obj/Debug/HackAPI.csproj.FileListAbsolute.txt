@@ -58,9 +58,10 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Microsoft.Owin.Securit
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.Http.Owin.xml
-C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csprojResolveAssemblyReference.cache
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.first.resources
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csproj.GenerateResource.Cache
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.pdb
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Newtonsoft.Json.xml
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.cart.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csprojResolveAssemblyReference.cache

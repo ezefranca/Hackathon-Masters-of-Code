@@ -62,3 +62,6 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.Migrat
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.csproj.GenerateResource.Cache
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.pdb
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\SimplifySDK.dll
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.csprojResolveAssemblyReference.cache
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.Migrations.cart.resources
