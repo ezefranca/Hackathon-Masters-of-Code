@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using HackAPI.Models;
+using HackAPI.Services;
 
 namespace HackAPI.Controllers
 {
@@ -13,7 +14,7 @@ namespace HackAPI.Controllers
         {
             try
             {
-                var service = new Models.CadastroService();
+                var service = new CadastroService();
                 service.Salvar(dados);
 
                 return Request.CreateResponse(HttpStatusCode.OK, dados);
@@ -30,7 +31,7 @@ namespace HackAPI.Controllers
         {
             try
             {
-                var service = new Models.CadastroService();
+                var service = new CadastroService();
                 var usuario = service.Get(userName, password);
 
                 return Request.CreateResponse(HttpStatusCode.OK, usuario);

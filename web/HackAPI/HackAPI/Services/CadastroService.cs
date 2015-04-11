@@ -1,7 +1,8 @@
-Ôªøusing System;
+using System;
 using System.Linq;
+using HackAPI.Models;
 
-namespace HackAPI.Models
+namespace HackAPI.Services
 {
     public  class CadastroService
     {
@@ -12,7 +13,7 @@ namespace HackAPI.Models
                 var user = context.Cadastro.FirstOrDefault(a => a.UserName.ToLower() == dados.UserName.ToLower());
 
                 if (user != null)
-                    throw new Exception("J√° existe um usu√°rio");
+                    throw new Exception("J· existe um usu·rio");
 
                 context.Cadastro.Add(dados);
                 context.SaveChanges();
@@ -25,7 +26,7 @@ namespace HackAPI.Models
                 var user = context.Cadastro.FirstOrDefault(a => a.UserName.ToLower() == userName.ToLower() && a.Password==password);
 
                 if (user == null)
-                    throw new Exception("Usu√°rio n√£o encontrado");
+                    throw new Exception("Usu·rio n„o encontrado");
 
                 return user;
             }
@@ -38,7 +39,7 @@ namespace HackAPI.Models
                 var user = context.Cadastro.FirstOrDefault(a => a.Id == userid );
 
                 if (user == null)
-                    throw new Exception("Usu√°rio n√£o encontrado");
+                    throw new Exception("Usu·rio n„o encontrado");
 
                 return user;
             }

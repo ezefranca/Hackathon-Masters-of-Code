@@ -2,9 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using HackAPI.Controllers;
+using HackAPI.Models;
 using SimplifyCommerce.Payments;
 
-namespace HackAPI.Models
+namespace HackAPI.Services
 {
     public class CartaoService
     {

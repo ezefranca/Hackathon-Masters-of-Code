@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using HackAPI.Models;
+using HackAPI.Services;
 
 namespace HackAPI.Controllers
 {
@@ -13,10 +14,10 @@ namespace HackAPI.Controllers
         {
             try
             {
-                var serviceCadastro = new Models.CadastroService();
+                var serviceCadastro = new CadastroService();
                 var usuario = serviceCadastro.Get(dados.UserId);
 
-                var service = new Models.CartaoService();
+                var service = new CartaoService();
 
                 var cartao = service.SaveCartao(dados,usuario);
 
@@ -34,7 +35,7 @@ namespace HackAPI.Controllers
         {
             try
             {
-                var service = new Models.CartaoService();
+                var service = new CartaoService();
                 var cartoes = service.ListByUser(userId);
 
                 return Request.CreateResponse(HttpStatusCode.OK, cartoes);
