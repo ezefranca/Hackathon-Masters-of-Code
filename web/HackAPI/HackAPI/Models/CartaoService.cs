@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using HackAPI.Controllers;
 using SimplifyCommerce.Payments;
 
@@ -15,7 +17,7 @@ namespace HackAPI.Models
             PaymentsApi api = new PaymentsApi();
             CardToken cardToken = new CardToken();
             Card card = new Card();
-            card.Cvc =dados.Cvc;
+            card.Cvc = dados.Cvc;
             card.ExpMonth = dados.Mes;
             card.ExpYear = dados.Ano;
             card.Number = dados.Numero;
@@ -26,18 +28,27 @@ namespace HackAPI.Models
             }
             catch (Exception e)
             {
-                
+
             }
 
             var cartao = new Cartao { Token = cardToken.Id, Dono = usuario };
 
-            var context = new ApplicationDbContext();
-            context.Cadastro.Attach(usuario);
-            context.Cartoes.Add(cartao);
-            context.SaveChanges();
+            using (var context = new ApplicationDbContext())
+            {
+                context.Cadastro.Attach(usuario);
+                context.Cartoes.Add(cartao);
+                context.SaveChanges();
+            }
 
             return cartao;
         }
 
+        public List<Cartao> ListByUser(int userId)
+        {
+            using (var context = new ApplicationDbContext())
+            {
+                return context.Cartoes.Where(a => a.Dono.Id == userId).ToList();
+            }
+        }
     }
 }

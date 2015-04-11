@@ -29,22 +29,22 @@ namespace HackAPI.Controllers
             }
         }
 
-        //[HttpGet]
-        //public HttpResponseMessage Get(string userName)
-        //{
-        //    try
-        //    {
-        //        var service = new Models.CadastroService();
-        //        var usuario = service.Get(userName, password);
+        [HttpGet]
+        public HttpResponseMessage List(int userId)
+        {
+            try
+            {
+                var service = new Models.CartaoService();
+                var cartoes = service.ListByUser(userId);
 
-        //        return Request.CreateResponse(HttpStatusCode.OK, usuario);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
-        //    }
+                return Request.CreateResponse(HttpStatusCode.OK, cartoes);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
 
-        //}
+        }
 
 
     }
