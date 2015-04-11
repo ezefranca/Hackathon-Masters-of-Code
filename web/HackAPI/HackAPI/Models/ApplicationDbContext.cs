@@ -12,6 +12,7 @@ namespace HackAPI.Models
 
         public DbSet<Cadastro> Cadastro { get; set; }
         public DbSet<Cartao> Cartoes { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
         
         public static ApplicationDbContext Create()
         {
