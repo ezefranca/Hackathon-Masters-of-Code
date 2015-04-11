@@ -1,5 +1,7 @@
-platform :<#ios#>, "7.0"
+source 'https://github.com/CocoaPods/Specs.git'
 
-pod "Restkit"
+inhibit_all_warnings!
 
-end
+platform :ios, '7.0'
+
+pod 'RestKit'

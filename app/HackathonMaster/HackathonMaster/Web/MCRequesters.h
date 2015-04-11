@@ -6,6 +6,15 @@
 //  Copyright (c) 2015 Hackathon. All rights reserved.
 //
 
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define WEBSERVICE_API_CURRENT_SERVER @"masterof.azurewebsites.net/api"
+#define WEBSERVICE_CURRENT_SERVER @"http://masterof.azurewebsites.net/api"
+//#define WEBSERVICE_SOAP_CURRENT_SERVER @"http://masterof.azurewebsites.net/api"
+//#define WEBSERVICE_API_CURRENT_SERVER @"api.site.com.br/v1.1"
+//#define WEBSERVICE_TOKEN_ISSUER_CURRENT_SERVER @"api.site.com.br"
+#define WEBSERVICE_PUSH_TOKEN_CURRENT_SERVER @"http://masterof.azurewebsites.net/api"
+//#define WEBSERVICE_UPLOAD_PHOTO_SERVER @"http://www.site.com.br/api/v1/"
+
 #import <Foundation/Foundation.h>
 #import <RestKit/RestKit.h>
 typedef NS_OPTIONS(NSInteger, MCRequestersMethods) {
