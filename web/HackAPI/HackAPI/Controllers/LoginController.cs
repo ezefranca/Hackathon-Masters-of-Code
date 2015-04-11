@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
 using HackAPI.Models;
 
@@ -8,52 +9,39 @@ namespace HackAPI.Controllers
     public class LoginController : ApiController
     {
         [HttpPost]
-        public Cadastro Cadastro(Cadastro dados)
+        public HttpResponseMessage Cadastro(Cadastro dados)
         {
-            var service = new CadastroService();
-            service.Salvar(dados);
-
-            return dados;
-        }
-
-        [HttpPost]
-        public Cadastro Login(Cadastro dados)
-        {
-            var service = new CadastroService();
-            var usuario = service.Get(dados.UserName, dados.Password);
-
-            return usuario;
-        }
-
-
-    }
-
-    public class CadastroService
-    {
-        public void Salvar(Cadastro dados)
-        {
-            using (var context = new Models.ApplicationDbContext())
+            try
             {
-                var user = context.Cadastro.FirstOrDefault(a => a.UserName.ToLower() == dados.UserName.ToLower());
+                var service = new Models.CadastroService();
+                service.Salvar(dados);
 
-                if (user != null)
-                    throw new Exception("Já existe um usuário");
+                return Request.CreateResponse(HttpStatusCode.OK, dados);
 
-                context.Cadastro.Add(dados);
-                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
-        public Cadastro Get(string userName, string password)
+
+        [HttpGet]
+        public HttpResponseMessage Login(string userName, string password)
         {
-            using (var context = new Models.ApplicationDbContext())
+            try
             {
-                var user = context.Cadastro.FirstOrDefault(a => a.UserName.ToLower() == userName.ToLower() && a.Password==password);
+                var service = new Models.CadastroService();
+                var usuario = service.Get(userName, password);
 
-                if (user == null)
-                    throw new Exception("Usuário não encontrado");
-
-                return user;
+                return Request.CreateResponse(HttpStatusCode.OK, usuario);
             }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+
         }
+
+
     }
 }

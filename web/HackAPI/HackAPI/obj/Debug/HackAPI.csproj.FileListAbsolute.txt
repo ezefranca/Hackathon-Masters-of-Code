@@ -61,3 +61,5 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.Http.Owin.x
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csprojResolveAssemblyReference.cache
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.pdb
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.first.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csproj.GenerateResource.Cache
