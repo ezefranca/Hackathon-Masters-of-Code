@@ -85,11 +85,6 @@
     _manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:URL]];
     [RKObjectManager setSharedManager: _manager];
     
-    Usuario *user = [[Usuario sharedInstance] currentUser];
-    
-    if (user.token) {
-        [_manager.HTTPClient setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"Token %@", user.token]];
-    }
     [_manager.HTTPClient setDefaultHeader:@"app_id" value:APP_ID_REQUEST_TOKEN];
     [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/javascript"];
     [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"application/json"];
@@ -107,11 +102,6 @@
         self.mappinglessClient = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:URL]];
         [self.mappinglessClient setParameterEncoding:AFJSONParameterEncoding];
         
-        Usuario *user = [[Usuario sharedInstance] currentUser];
-        
-        if (user.token) {
-            [self.mappinglessClient setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"Token %@", user.token]];
-        }
     }
     
     NSString *methodName = @"";

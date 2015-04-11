@@ -21,6 +21,9 @@
 		F7EA58901AD9B4FD002ACBBB /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA588F1AD9B4FD002ACBBB /* Base64.m */; };
 		F7EA58951AD9B65B002ACBBB /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58941AD9B65B002ACBBB /* Usuario.m */; };
 		F7EA58981AD9B9B0002ACBBB /* MCRequesterCartao.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58971AD9B9B0002ACBBB /* MCRequesterCartao.m */; };
+		F7EA589B1AD9BBF0002ACBBB /* MCRequesterLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA589A1AD9BBF0002ACBBB /* MCRequesterLogin.m */; };
+		F7EA589E1AD9BD6A002ACBBB /* LoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA589D1AD9BD6A002ACBBB /* LoginUser.m */; };
+		F7EA58A61AD9D126002ACBBB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58A51AD9D126002ACBBB /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,13 @@
 		F7EA58941AD9B65B002ACBBB /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Usuario.m; path = user/Usuario.m; sourceTree = "<group>"; };
 		F7EA58961AD9B9B0002ACBBB /* MCRequesterCartao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCRequesterCartao.h; path = Cartao/MCRequesterCartao.h; sourceTree = "<group>"; };
 		F7EA58971AD9B9B0002ACBBB /* MCRequesterCartao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCRequesterCartao.m; path = Cartao/MCRequesterCartao.m; sourceTree = "<group>"; };
+		F7EA58991AD9BBF0002ACBBB /* MCRequesterLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCRequesterLogin.h; path = Login/MCRequesterLogin.h; sourceTree = "<group>"; };
+		F7EA589A1AD9BBF0002ACBBB /* MCRequesterLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCRequesterLogin.m; path = Login/MCRequesterLogin.m; sourceTree = "<group>"; };
+		F7EA589C1AD9BD6A002ACBBB /* LoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginUser.h; path = user/LoginUser.h; sourceTree = "<group>"; };
+		F7EA589D1AD9BD6A002ACBBB /* LoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginUser.m; path = user/LoginUser.m; sourceTree = "<group>"; };
+		F7EA58A01AD9BF19002ACBBB /* DSMappedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSMappedEntity.h; path = Login/DSMappedEntity.h; sourceTree = "<group>"; };
+		F7EA58A41AD9D126002ACBBB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F7EA58A51AD9D126002ACBBB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,13 +133,10 @@
 		F77497201AD9AAD600734C14 /* HackathonMaster */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA58A31AD9D086002ACBBB /* Controllers */,
 				F7EA58911AD9B624002ACBBB /* Model */,
 				F77497251AD9AAD600734C14 /* AppDelegate.h */,
 				F77497261AD9AAD600734C14 /* AppDelegate.m */,
-				F77497281AD9AAD600734C14 /* FirstViewController.h */,
-				F77497291AD9AAD600734C14 /* FirstViewController.m */,
-				F774972B1AD9AAD600734C14 /* SecondViewController.h */,
-				F774972C1AD9AAD600734C14 /* SecondViewController.m */,
 				F774972E1AD9AAD600734C14 /* Main.storyboard */,
 				F77497311AD9AAD600734C14 /* Images.xcassets */,
 				F77497331AD9AAD600734C14 /* LaunchScreen.xib */,
@@ -175,6 +182,8 @@
 				F7EA588F1AD9B4FD002ACBBB /* Base64.m */,
 				F7EA58961AD9B9B0002ACBBB /* MCRequesterCartao.h */,
 				F7EA58971AD9B9B0002ACBBB /* MCRequesterCartao.m */,
+				F7EA58991AD9BBF0002ACBBB /* MCRequesterLogin.h */,
+				F7EA589A1AD9BBF0002ACBBB /* MCRequesterLogin.m */,
 			);
 			name = Web;
 			sourceTree = "<group>";
@@ -182,6 +191,7 @@
 		F7EA58911AD9B624002ACBBB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA589F1AD9BEF6002ACBBB /* Util */,
 				F7EA58921AD9B63A002ACBBB /* User */,
 				F774974A1AD9AB8500734C14 /* Web */,
 			);
@@ -193,8 +203,31 @@
 			children = (
 				F7EA58931AD9B65B002ACBBB /* Usuario.h */,
 				F7EA58941AD9B65B002ACBBB /* Usuario.m */,
+				F7EA589C1AD9BD6A002ACBBB /* LoginUser.h */,
+				F7EA589D1AD9BD6A002ACBBB /* LoginUser.m */,
 			);
 			name = User;
+			sourceTree = "<group>";
+		};
+		F7EA589F1AD9BEF6002ACBBB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA58A01AD9BF19002ACBBB /* DSMappedEntity.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		F7EA58A31AD9D086002ACBBB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F77497281AD9AAD600734C14 /* FirstViewController.h */,
+				F77497291AD9AAD600734C14 /* FirstViewController.m */,
+				F774972B1AD9AAD600734C14 /* SecondViewController.h */,
+				F774972C1AD9AAD600734C14 /* SecondViewController.m */,
+				F7EA58A41AD9D126002ACBBB /* LoginViewController.h */,
+				F7EA58A51AD9D126002ACBBB /* LoginViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,12 +365,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EA589B1AD9BBF0002ACBBB /* MCRequesterLogin.m in Sources */,
 				F7EA58981AD9B9B0002ACBBB /* MCRequesterCartao.m in Sources */,
 				F7EA58901AD9B4FD002ACBBB /* Base64.m in Sources */,
 				F774972D1AD9AAD600734C14 /* SecondViewController.m in Sources */,
 				F7EA588D1AD9B289002ACBBB /* MCNotificationRequester.m in Sources */,
 				F77497271AD9AAD600734C14 /* AppDelegate.m in Sources */,
+				F7EA589E1AD9BD6A002ACBBB /* LoginUser.m in Sources */,
 				F7EA58951AD9B65B002ACBBB /* Usuario.m in Sources */,
+				F7EA58A61AD9D126002ACBBB /* LoginViewController.m in Sources */,
 				F774974D1AD9ABBA00734C14 /* MCRequesters.m in Sources */,
 				F774972A1AD9AAD600734C14 /* FirstViewController.m in Sources */,
 				F77497241AD9AAD600734C14 /* main.m in Sources */,
