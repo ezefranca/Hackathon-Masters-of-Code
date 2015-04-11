@@ -6,7 +6,7 @@ using HackAPI.Models;
 
 namespace HackAPI.Controllers
 {
-    public class LoginController : ApiController
+    public class UserController : ApiController
     {
         [HttpPost]
         public HttpResponseMessage Cadastro(Cadastro dados)

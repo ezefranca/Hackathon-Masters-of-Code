@@ -30,5 +30,18 @@ namespace HackAPI.Models
                 return user;
             }
         }
+
+        internal Cadastro Get(int userid)
+        {
+            using (var context = new Models.ApplicationDbContext())
+            {
+                var user = context.Cadastro.FirstOrDefault(a => a.Id == userid );
+
+                if (user == null)
+                    throw new Exception("Usuário não encontrado");
+
+                return user;
+            }
+        }
     }
 }
