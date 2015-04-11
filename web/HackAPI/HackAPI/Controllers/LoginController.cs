@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using HackAPI.Models;
 
 namespace HackAPI.Controllers
 {
@@ -41,12 +38,5 @@ namespace HackAPI.Controllers
         {
             throw new NotImplementedException();
         }
-    }
-
-    public class Cadastro
-    {
-        public string UserName { get; set; }
-        public string Password { get; set; }
-
     }
 }
