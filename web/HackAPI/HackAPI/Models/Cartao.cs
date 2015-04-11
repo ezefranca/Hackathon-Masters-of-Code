@@ -8,6 +8,6 @@ namespace HackAPI.Models
         public int Id { get; set; }
         public string Token { get; set; }
         [JsonIgnore]
-        public virtual Cadastro Dono { get; set; }
+        public  Cadastro Dono { get; set; }
     }
 }

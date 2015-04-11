@@ -216,6 +216,10 @@
     <Compile Include="Migrations\201504112123289_cart.Designer.cs">
       <DependentUpon>201504112123289_cart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504112210524_carts.cs" />
+    <Compile Include="Migrations\201504112210524_carts.Designer.cs">
+      <DependentUpon>201504112210524_carts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -262,7 +266,8 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <None Include="Properties\PublishProfiles\MasterOf.pubxml" />
+    <None Include="Properties\PublishProfiles\masterof - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\masterof - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -307,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504112123289_cart.resx">
       <DependentUpon>201504112123289_cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504112210524_carts.resx">
+      <DependentUpon>201504112210524_carts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:wtf7u57uzg.database.windows.net,1433;Database=dbhack;User ID=rodolfo@wtf7u57uzg;Password=123Mudar;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:ywfyygm88z.database.windows.net,1433;Database=masteroAfeSRGNUg;User ID=rodolfo@ywfyygm88z;Password=123Mudar;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Hack\\Hackathon-Masters-of-Code\\web\\HackAPI\\HackAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
   <parameter name="DefaultConnection_DatabasePublish-Web.config Connection String" description="DefaultConnection_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="DefaultConnection_DatabasePublish.ConnetionString" tags="SqlConnectionString">

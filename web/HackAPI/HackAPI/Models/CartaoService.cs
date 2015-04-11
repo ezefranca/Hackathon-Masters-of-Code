@@ -32,6 +32,7 @@ namespace HackAPI.Models
             var cartao = new Cartao { Token = cardToken.Id, Dono = usuario };
 
             var context = new ApplicationDbContext();
+            context.Cadastro.Attach(usuario);
             context.Cartoes.Add(cartao);
             context.SaveChanges();
 
