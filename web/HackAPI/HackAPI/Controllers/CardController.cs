@@ -29,22 +29,22 @@ namespace HackAPI.Controllers
             }
         }
 
-        [HttpGet]
-        public HttpResponseMessage Get(string userName)
-        {
-            try
-            {
-                var service = new Models.CadastroService();
-                var usuario = service.Get(userName, password);
+        //[HttpGet]
+        //public HttpResponseMessage Get(string userName)
+        //{
+        //    try
+        //    {
+        //        var service = new Models.CadastroService();
+        //        var usuario = service.Get(userName, password);
 
-                return Request.CreateResponse(HttpStatusCode.OK, usuario);
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
-            }
+        //        return Request.CreateResponse(HttpStatusCode.OK, usuario);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+        //    }
 
-        }
+        //}
 
 
     }
@@ -55,7 +55,7 @@ namespace HackAPI.Controllers
         public string Numero { get; set; }
         public int Ano { get; set; }
         public int Mes { get; set; }
-        public int Cvc { get; set; }
+        public string Cvc { get; set; }
     }
 }
 
