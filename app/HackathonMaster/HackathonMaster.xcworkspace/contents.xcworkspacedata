@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Awesome.xib">
+   </FileRef>
+   <FileRef
       location = "group:HackathonMaster.xcodeproj">
    </FileRef>
    <FileRef

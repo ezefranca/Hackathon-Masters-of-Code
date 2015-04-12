@@ -54,14 +54,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *TableSampleIdentifier = @"CellIdentifier";
+    static NSString *TableSampleIdentifier = @"MachineCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
+    MachineCell *cell = [tableView dequeueReusableCellWithIdentifier:
                              TableSampleIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]
-                initWithStyle:UITableViewCellStyleValue1
-                reuseIdentifier:TableSampleIdentifier];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"MachineCell" owner:nil options:nil] firstObject];
     }
     
     NSUInteger row = [indexPath row];
@@ -73,7 +71,10 @@
     CFStringRef sKey = CFUUIDCreateString(NULL, p.UUID);
     NSString  *changeUUIDToStr = [[NSString  alloc]initWithCString:CFStringGetCStringPtr(sKey, 0)
                                                           encoding:NSUTF8StringEncoding];
-    cell.detailTextLabel.text = changeUUIDToStr;
+    cell.titulo.text = changeUUIDToStr;
+    if ([changeUUIDToStr isEqual:@"ZBModule"]) {
+        cell.titulo.text = @"Máquina de Chocolate";
+    }
     
     return cell;
 }
@@ -83,6 +84,11 @@
     gSelectDev = [t.peripherals objectAtIndex:[indexPath row]];
     [self performSegueWithIdentifier:@"TXRX" sender:self];
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 140;
+}
+
 
 - (IBAction)doSearchDev:(id)sender
 {
@@ -142,7 +148,7 @@
                                                     message:message
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
-                                          otherButtonTitles:@"Cancle", nil];
+                                          otherButtonTitles:@"Cancel", nil];
     [alert show];
 }
 

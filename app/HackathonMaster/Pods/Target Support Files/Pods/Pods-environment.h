@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_GRMustache 3
 #define COCOAPODS_VERSION_PATCH_GRMustache 0
 
+// ISAlertView
+#define COCOAPODS_POD_AVAILABLE_ISAlertView
+#define COCOAPODS_VERSION_MAJOR_ISAlertView 0
+#define COCOAPODS_VERSION_MINOR_ISAlertView 1
+#define COCOAPODS_VERSION_PATCH_ISAlertView 0
+
 // ISO8601DateFormatterValueTransformer
 #define COCOAPODS_POD_AVAILABLE_ISO8601DateFormatterValueTransformer
 #define COCOAPODS_VERSION_MAJOR_ISO8601DateFormatterValueTransformer 0

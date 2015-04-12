@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MachineCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *titulo;
+@property (strong, nonatomic) IBOutlet UILabel *subtitulo;
 
 @end

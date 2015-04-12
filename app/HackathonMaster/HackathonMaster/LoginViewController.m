@@ -57,6 +57,9 @@
     [MCRequesterLogin.new loginWithSuccessBlock: user
                                    successBlock:^(NSArray *results) {
                                        [self login];
+                                       LoginUser *user = [results objectAtIndex:0];
+                                       [[NSUserDefaults standardUserDefaults] setObject:user.userID forKey:@"userid"];
+                                       [[NSUserDefaults standardUserDefaults] synchronize];
                                    } errorBlock:^(NSError *error) {
                                        NSLog(@"ERRO!!!");
                                    }];

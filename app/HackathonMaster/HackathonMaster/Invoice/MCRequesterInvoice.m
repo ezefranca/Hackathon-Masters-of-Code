@@ -39,20 +39,20 @@
 -(void)addInvoiceWithSucessBlock:(Invoice *)invoice successBlock:(void (^)())successBlock errorBlock:(void (^)(NSError *error))errorBlock {
     
     NSDictionary *data = [[NSDictionary alloc]init];
-    NSString *userID = invoice.userID;
+    NSString *userID = [[NSUserDefaults standardUserDefaults] stringForKey:@"userid"];;
     NSString *productID = invoice.productID;
-    NSString *cardID = invoice.cardID;
     NSString *quantidade = invoice.quantidade;
     data = @{  @"UserId"  : userID,
-               @"ProductId"  : productID,
-               @"CardId"  : cardID,
-               @"Quantidade"  : quantidade};
+               @"ProductId"  : invoice.productID,
+               @"Quantidade"  : invoice.quantidade};
+    
+    NSLog(@"%@", data);
     
     [self performRequestWithoutMappingWithParams:data method:MCRequestersMethodPOST path:POST_INVOICE withSuccesBlock:^(id responseObject) {
         if (successBlock) {
             successBlock();
-            NSLog(@"%@", responseObject);
-            NSArray * myNewArray = [NSArray arrayWithObjects:responseObject, nil];
+            //NSLog(@"%@", responseObject);
+           // NSArray * myNewArray = [NSArray arrayWithObjects:responseObject, nil];
         }
     } andErrorBlock:^(NSError *error) {
         if (errorBlock) {

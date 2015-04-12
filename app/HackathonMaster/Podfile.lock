@@ -8,6 +8,7 @@ PODS:
     - FMDB/common
   - GRMustache (7.3.0):
     - JRSwizzle (~> 1.0)
+  - ISAlertView (0.1)
   - ISO8601DateFormatterValueTransformer (0.6.0):
     - RKValueTransformers (~> 1.1.0)
   - JRSwizzle (1.0)
@@ -44,6 +45,7 @@ PODS:
 
 DEPENDENCIES:
   - CardIO
+  - ISAlertView
   - Mapbox-iOS-SDK
   - RestKit
   - SDWebImage
@@ -53,6 +55,7 @@ SPEC CHECKSUMS:
   CardIO: 3b0cc447bd0dd3d9552159365ba5c7b7f1db586a
   FMDB: 773d79bb74226959b7e2286b1d6e0bd857c88915
   GRMustache: 6baee020c5644416c034f5afb1607f6219e7f753
+  ISAlertView: af135563845723618b2ff78edcad946165837258
   ISO8601DateFormatterValueTransformer: 3ac3a721381697cab4e792d8049ce2f2e9ad3036
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
   Mapbox-iOS-SDK: ee136ca5b7f853456b50dfd7a7f0e243288cf86f

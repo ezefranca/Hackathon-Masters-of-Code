@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "CardIO.h"
+#import "MCRequesterLogin.h"
 
-@interface CadastroViewController : UIViewController<CardIOPaymentViewControllerDelegate>
+@interface CadastroViewController : UIViewController<CardIOPaymentViewControllerDelegate>{
+    NSDictionary *cartao;
+}
 - (IBAction)scanCard:(id)sender;
+- (IBAction)cadastrar:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIImageView *scanImage;
+@property (strong, nonatomic) IBOutlet UIButton *scanButton;
+@property (strong, nonatomic) IBOutlet UITextField *password;
+@property (strong, nonatomic) IBOutlet UITextField *confirmPassword;
+
+@property (strong, nonatomic) IBOutlet UIView *parteUm;
+@property (strong, nonatomic) IBOutlet UITextField *username;
+
+@property (strong, nonatomic) IBOutlet UIView *parteDois;
 @end

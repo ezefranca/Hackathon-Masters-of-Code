@@ -9,6 +9,7 @@
  */
 
 #import "CompraViewController.h"
+#import "ISAlertView.h"
 
 @interface CompraViewController ()
 
@@ -125,13 +126,36 @@
 
 - (IBAction)doSend:(id)sender
 {
-    if(t.activePeripheral!=nil)
-    {
-        NSString *TxData = gSendTxt.text;
-        NSData *aData = [TxData dataUsingEncoding:NSUTF8StringEncoding];
-        [t writeDataToSscomm:aData];
-    }
+  Invoice *invoice = [[Invoice alloc]init];
+    invoice.userID = @"1";//[[NSUserDefaults standardUserDefaults] stringForKey:@"userid"];
+    invoice.productID = @"5";
+    invoice.cardID = @"1";
+    invoice.quantidade = @"1";
+  
+    [MCRequesterInvoice.new addInvoiceWithSucessBlock:invoice successBlock:^{
+        NSLog(@"COMPRA");
+        if(t.activePeripheral!=nil)
+            {
+                NSString *TxData = @"o";
+                NSData *aData = [TxData dataUsingEncoding:NSUTF8StringEncoding];
+                [t writeDataToSscomm:aData];
+                ISAlertView *alertView = [[ISAlertView alloc] init];
+                UIView *alertImage = [[[NSBundle mainBundle] loadNibNamed:@"Awesome" owner:self options:nil] objectAtIndex:0];
+                [alertView setContainerView:alertImage];
+                [alertView show];
+            }
+        } errorBlock:^(NSError *error) {
+            
+        }];
+    
+//    if(t.activePeripheral!=nil)
+//    {
+//        NSString *TxData = @"o";
+//        NSData *aData = [TxData dataUsingEncoding:NSUTF8StringEncoding];
+//        [t writeDataToSscomm:aData];
+//    }
 }
+
 
 - (IBAction)doClean:(id)sender
 {

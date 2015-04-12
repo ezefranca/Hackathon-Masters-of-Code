@@ -41,6 +41,7 @@
 		F7EA58D71ADA3F62002ACBBB /* bluekitBle.h in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58CD1ADA3A4D002ACBBB /* bluekitBle.h */; };
 		F7EA58D81ADA3F62002ACBBB /* blueKitDef.h in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58CE1ADA3A4D002ACBBB /* blueKitDef.h */; };
 		F7EA58DB1ADA43EE002ACBBB /* CompraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58DA1ADA43EE002ACBBB /* CompraViewController.m */; };
+		F7EA58E21ADA9882002ACBBB /* Awesome.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EA58E11ADA9882002ACBBB /* Awesome.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		F7EA58D41ADA3B23002ACBBB /* SBTableAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBTableAlert.m; path = bluetooth/SBTableAlert.m; sourceTree = "<group>"; };
 		F7EA58D91ADA43EE002ACBBB /* CompraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompraViewController.h; sourceTree = "<group>"; };
 		F7EA58DA1ADA43EE002ACBBB /* CompraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompraViewController.m; sourceTree = "<group>"; };
+		F7EA58E11ADA9882002ACBBB /* Awesome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Awesome.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +309,7 @@
 				F7EA58C41ADA146C002ACBBB /* HistoricoCell.h */,
 				F7EA58C51ADA146C002ACBBB /* HistoricoCell.m */,
 				F7EA58C61ADA146C002ACBBB /* HistoricoCell.xib */,
+				F7EA58E11ADA9882002ACBBB /* Awesome.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				F7EA58B61ADA02AC002ACBBB /* MachineCell.xib in Resources */,
 				F77497351AD9AAD600734C14 /* LaunchScreen.xib in Resources */,
 				F77497321AD9AAD600734C14 /* Images.xcassets in Resources */,
+				F7EA58E21ADA9882002ACBBB /* Awesome.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CBPeripheral.h>
 #import "bluekitBle.h"
+#import "MCRequesterInvoice.h"
 
 @interface CompraViewController : UIViewController<UITextFieldDelegate,blueKitBLEDelegate>
 {
