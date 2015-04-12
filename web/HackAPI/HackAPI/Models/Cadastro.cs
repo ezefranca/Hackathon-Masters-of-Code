@@ -8,6 +8,6 @@ namespace HackAPI.Models
         public string UserName { get; set; }
         public string Password { get; set; }
 
-        public List<Cartao> Cartoes { get; set; }
+        public string IdMaster { get; set; }
     }
 }

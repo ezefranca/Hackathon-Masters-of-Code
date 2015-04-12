@@ -18,22 +18,19 @@ namespace HackAPI.Controllers
                 var serviceCadastro = new CadastroService();
                 var usuario = serviceCadastro.Get(dados.UserId);
                 
-                var serviceCartao = new CartaoService();
-                var cartao = serviceCartao.Get(dados.CardId);
-                
                 var serviceProduto = new ProdutoService();
                 var produto=serviceProduto.Get(dados.ProductId);
 
 
                 var invoiceService = new InvoiceService();
-                var invoice = invoiceService.EfetuarPagamento(usuario, cartao, produto, dados.Quantidade);
+                var invoice = invoiceService.EfetuarPagamento(usuario,  produto, dados.Quantidade);
 
                 return Request.CreateResponse(HttpStatusCode.OK, invoice);
 
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message, Stack=ex.StackTrace });
             }
         }
 
@@ -60,7 +57,6 @@ namespace HackAPI.Controllers
     {
         public int UserId { get; set; }
         public int ProductId { get; set; }
-        public int CardId { get; set; }
         public int Quantidade { get; set; }
     }
 }

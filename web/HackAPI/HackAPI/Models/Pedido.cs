@@ -7,7 +7,6 @@
 
         public int Quantidade { get; set; }
 
-        public Models.Cartao Cartao { get; set; }
 
         public Models.Produto Produto { get; set; }
 
