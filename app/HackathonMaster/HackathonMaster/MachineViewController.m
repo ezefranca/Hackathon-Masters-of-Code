@@ -10,7 +10,9 @@
 #import "MCRequesterLogin.h"
 #import "LoginUser.h"
 
-@interface MachineViewController ()
+@interface MachineViewController (){
+    NSMutableArray *arrayDeMaquinas;
+}
 
 @end
 
@@ -26,6 +28,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    arrayDeMaquinas = [[NSMutableArray alloc]init];
+    [arrayDeMaquinas addObject:@"Máquina de Sorvete"];
+    [arrayDeMaquinas addObject:@"Máquina de Brinquedos"];
+    [arrayDeMaquinas addObject:@"Máquina de Livros"];
+    [arrayDeMaquinas addObject:@"Ingressos"];
+    [arrayDeMaquinas addObject:@"Máquina de Chicletes"];
+    [arrayDeMaquinas addObject:@"Máquina de Brinquedos"];
+    [arrayDeMaquinas addObject:@"Máquina de Livros"];
+    [arrayDeMaquinas addObject:@"Máquina de Sorvete"];
+    [arrayDeMaquinas addObject:@"Máquina de Brinquedos"];
+    [arrayDeMaquinas addObject:@"Máquina de Livros"];
+    [arrayDeMaquinas addObject:@"Ingressos"];
     t = [bluekitBle getSharedInstance];
     [t controlSetup:1];
     t.delegate = self;
@@ -66,14 +80,19 @@
     
     CBPeripheral *p = [t.peripherals objectAtIndex:row];
     
-    cell.textLabel.text = p.name;
+    //cell.textLabel.text = p.name;
     
     CFStringRef sKey = CFUUIDCreateString(NULL, p.UUID);
     NSString  *changeUUIDToStr = [[NSString  alloc]initWithCString:CFStringGetCStringPtr(sKey, 0)
                                                           encoding:NSUTF8StringEncoding];
     cell.titulo.text = changeUUIDToStr;
-    if ([changeUUIDToStr isEqual:@"ZBModule"]) {
+    NSLog(@"%@", changeUUIDToStr);
+    if ([changeUUIDToStr isEqual:@"6648D53C-749D-7079-49C7-78CAA78A0CF4"]) {
         cell.titulo.text = @"Máquina de Chocolate";
+    }else{
+        if (indexPath.row < [arrayDeMaquinas count]) {
+        cell.titulo.text = [arrayDeMaquinas objectAtIndex:indexPath.row];
+        }
     }
     
     return cell;

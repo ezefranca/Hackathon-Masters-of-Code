@@ -35,6 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBar.topItem.title = @"";
+    self.navigationItem.title = @"Buy";
     gSendTxt.delegate = self;
     gRecvTxtStr =[[NSMutableString alloc] initWithString:@""];
     gTxMethord.hidden = YES;
