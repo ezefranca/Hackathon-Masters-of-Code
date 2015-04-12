@@ -23,10 +23,10 @@ namespace HackAPI.Migrations
             //
             context.Produtos.AddOrUpdate(
               p => p.Nome,
-              new Produto {Imagem = "lolo.gif",Nome = "Chocolate Lolo",Preco =23.2M,Quantidade = 3},
-              new Produto {Imagem = "api.gif",Nome = "As melhores do Ari",Preco =23.2M,Quantidade = 5},
-              new Produto {Imagem = "cocacola.gif",Nome = "Coca Cola",Preco =23.2M,Quantidade = 1},
-              new Produto {Imagem = "ticktack.gif",Nome = "Tick Tack",Preco =23.2M,Quantidade = 3}
+              new Produto { Imagem = "http://masterof.azurewebsites.net/content/lollo.png", Nome = "Chocolate Lolo", Preco = 23.2M, Quantidade = 3 },
+              new Produto { Imagem = "http://masterof.azurewebsites.net/content/arytoledo.png", Nome = "As melhores do Ari", Preco = 23.2M, Quantidade = 5 },
+              new Produto { Imagem = "http://masterof.azurewebsites.net/content/cocacola.png", Nome = "Coca Cola", Preco = 23.2M, Quantidade = 1 },
+              new Produto { Imagem = "http://masterof.azurewebsites.net/content/tictac.png", Nome = "Tick Tack", Preco = 23.2M, Quantidade = 3 }
             );
             //
         }
