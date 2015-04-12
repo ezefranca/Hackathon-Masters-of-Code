@@ -34,10 +34,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (_postagem == nil) {
-        return 6;
-    }
-    return [_postagem count] + 1;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -104,7 +101,7 @@
 //        } :pagina:isVip];
 //    }
     if(!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"DSComunidadeFreeCell" owner:nil options:nil] firstObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"MachineCell" owner:nil options:nil] firstObject];
         cell.selectionStyle = UITableViewCellSeparatorStyleSingleLine;
         //cell.accessoryView = tableViewAcessory;
         
@@ -115,6 +112,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 80;
 }
 
 @end

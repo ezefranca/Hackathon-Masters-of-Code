@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MachineCell.h"
 
 @interface MachineViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
