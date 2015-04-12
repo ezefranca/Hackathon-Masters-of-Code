@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "Cartao.h"
 #import "MCRequesterCard.h"
+#import "MCRequesterLogin.h"
+#import "LoginUser.h"
 
 @interface LoginViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UITextField *loginLabel;
+@property (strong, nonatomic) IBOutlet UITextField *passLabel;
+
+
 
 - (IBAction)didClickLogin:(id)sender;
 - (IBAction)didClickSignIn:(id)sender;

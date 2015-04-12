@@ -17,9 +17,4 @@
 @property(strong, nonatomic) NSString *cardMonth;
 @property(strong, nonatomic) NSString *cardCvC;
 
-@property(strong, nonatomic) NSString *responseID;
-@property(strong, nonatomic) NSString *responseToken;
-
-
-
 @end

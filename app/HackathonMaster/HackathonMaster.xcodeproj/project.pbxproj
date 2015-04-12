@@ -10,7 +10,7 @@
 		EBEF6750AD0BFA3EA787B1DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2AC2B93A40C1B7A94C6D30 /* libPods.a */; };
 		F77497241AD9AAD600734C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F77497231AD9AAD600734C14 /* main.m */; };
 		F77497271AD9AAD600734C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F77497261AD9AAD600734C14 /* AppDelegate.m */; };
-		F774972A1AD9AAD600734C14 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77497291AD9AAD600734C14 /* FirstViewController.m */; };
+		F774972A1AD9AAD600734C14 /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77497291AD9AAD600734C14 /* MachineViewController.m */; };
 		F774972D1AD9AAD600734C14 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774972C1AD9AAD600734C14 /* SecondViewController.m */; };
 		F77497301AD9AAD600734C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F774972E1AD9AAD600734C14 /* Main.storyboard */; };
 		F77497321AD9AAD600734C14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77497311AD9AAD600734C14 /* Images.xcassets */; };
@@ -26,6 +26,8 @@
 		F7EA58A91AD9D47F002ACBBB /* CadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58A81AD9D47F002ACBBB /* CadastroViewController.m */; };
 		F7EA58AD1AD9E6FD002ACBBB /* Cartao.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58AC1AD9E6FD002ACBBB /* Cartao.m */; };
 		F7EA58B01AD9E862002ACBBB /* MCRequesterCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58AF1AD9E862002ACBBB /* MCRequesterCard.m */; };
+		F7EA58B51ADA02AC002ACBBB /* MachineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58B31ADA02AC002ACBBB /* MachineCell.m */; };
+		F7EA58B61ADA02AC002ACBBB /* MachineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EA58B41ADA02AC002ACBBB /* MachineCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,8 @@
 		F77497231AD9AAD600734C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F77497251AD9AAD600734C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F77497261AD9AAD600734C14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F77497281AD9AAD600734C14 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F77497291AD9AAD600734C14 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F77497281AD9AAD600734C14 /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
+		F77497291AD9AAD600734C14 /* MachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
 		F774972B1AD9AAD600734C14 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		F774972C1AD9AAD600734C14 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		F774972F1AD9AAD600734C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,9 @@
 		F7EA58AC1AD9E6FD002ACBBB /* Cartao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cartao.m; path = Cartao/Cartao.m; sourceTree = "<group>"; };
 		F7EA58AE1AD9E862002ACBBB /* MCRequesterCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCRequesterCard.h; path = Cartao/MCRequesterCard.h; sourceTree = "<group>"; };
 		F7EA58AF1AD9E862002ACBBB /* MCRequesterCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCRequesterCard.m; path = Cartao/MCRequesterCard.m; sourceTree = "<group>"; };
+		F7EA58B21ADA02AC002ACBBB /* MachineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MachineCell.h; path = CustomCells/MachineCell.h; sourceTree = "<group>"; };
+		F7EA58B31ADA02AC002ACBBB /* MachineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MachineCell.m; path = CustomCells/MachineCell.m; sourceTree = "<group>"; };
+		F7EA58B41ADA02AC002ACBBB /* MachineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MachineCell.xib; path = CustomCells/MachineCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +144,7 @@
 		F77497201AD9AAD600734C14 /* HackathonMaster */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA58B11ADA0281002ACBBB /* View */,
 				F7EA58A31AD9D086002ACBBB /* Controllers */,
 				F7EA58911AD9B624002ACBBB /* Model */,
 				F77497251AD9AAD600734C14 /* AppDelegate.h */,
@@ -227,8 +233,8 @@
 		F7EA58A31AD9D086002ACBBB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F77497281AD9AAD600734C14 /* FirstViewController.h */,
-				F77497291AD9AAD600734C14 /* FirstViewController.m */,
+				F77497281AD9AAD600734C14 /* MachineViewController.h */,
+				F77497291AD9AAD600734C14 /* MachineViewController.m */,
 				F774972B1AD9AAD600734C14 /* SecondViewController.h */,
 				F774972C1AD9AAD600734C14 /* SecondViewController.m */,
 				F7EA58A41AD9D126002ACBBB /* LoginViewController.h */,
@@ -246,6 +252,16 @@
 				F7EA58AC1AD9E6FD002ACBBB /* Cartao.m */,
 			);
 			name = Cartao;
+			sourceTree = "<group>";
+		};
+		F7EA58B11ADA0281002ACBBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA58B21ADA02AC002ACBBB /* MachineCell.h */,
+				F7EA58B31ADA02AC002ACBBB /* MachineCell.m */,
+				F7EA58B41ADA02AC002ACBBB /* MachineCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77497301AD9AAD600734C14 /* Main.storyboard in Resources */,
+				F7EA58B61ADA02AC002ACBBB /* MachineCell.xib in Resources */,
 				F77497351AD9AAD600734C14 /* LaunchScreen.xib in Resources */,
 				F77497321AD9AAD600734C14 /* Images.xcassets in Resources */,
 			);
@@ -388,6 +405,7 @@
 				F7EA589B1AD9BBF0002ACBBB /* MCRequesterLogin.m in Sources */,
 				F7EA58901AD9B4FD002ACBBB /* Base64.m in Sources */,
 				F774972D1AD9AAD600734C14 /* SecondViewController.m in Sources */,
+				F7EA58B51ADA02AC002ACBBB /* MachineCell.m in Sources */,
 				F7EA588D1AD9B289002ACBBB /* MCNotificationRequester.m in Sources */,
 				F77497271AD9AAD600734C14 /* AppDelegate.m in Sources */,
 				F7EA58AD1AD9E6FD002ACBBB /* Cartao.m in Sources */,
@@ -395,7 +413,7 @@
 				F7EA58951AD9B65B002ACBBB /* Usuario.m in Sources */,
 				F7EA58A61AD9D126002ACBBB /* LoginViewController.m in Sources */,
 				F774974D1AD9ABBA00734C14 /* MCRequesters.m in Sources */,
-				F774972A1AD9AAD600734C14 /* FirstViewController.m in Sources */,
+				F774972A1AD9AAD600734C14 /* MachineViewController.m in Sources */,
 				F77497241AD9AAD600734C14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

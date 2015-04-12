@@ -18,9 +18,8 @@
     [self performRequestWithoutMappingWithParams:data method:MCRequestersMethodPOST path:POST_CARD withSuccesBlock:^(id responseObject) {
         if (successBlock) {
             successBlock();
-            NSLog(@"%@", responseObject);
-            NSArray * myNewArray = [NSArray arrayWithObjects:responseObject, nil];
-            NSLog(@"%@", [myNewArray objectAtIndex:0]);
+            NSString *response = [[NSString alloc] initWithData:responseObject encoding:NSASCIIStringEncoding];
+            NSLog(@"%@", response);
         }
     } andErrorBlock:^(NSError *error) {
         if (errorBlock) {

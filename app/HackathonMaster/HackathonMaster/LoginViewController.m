@@ -16,28 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Cartao *card = [[Cartao alloc]init];
-    card.userID = @"3";
-    card.cardNumber = @"5105105105105100";
-    card.cardYear = @"19";
-    card.cardMonth = @"12";
-    card.cardCvC = @"123";
+//    Cartao *card = [[Cartao alloc]init];
+//    card.userID = @"3";
+//    card.cardNumber = @"5105105105105100";
+//    card.cardYear = @"19";
+//    card.cardMonth = @"12";
+//    card.cardCvC = @"123";
+//        
+//    [MCRequesterCard.new addCardWithSucessBlock:card successBlock:^{
+//        NSLog(@"ENVIADO");
+//    } errorBlock:^(NSError *error) {
+//        NSLog(@"ERROR");
+//    }];
     
-
-    
-    [MCRequesterCard.new addCardWithSucessBlock:card successBlock:^{
-        NSLog(@"ENVIADO");
-    } errorBlock:^(NSError *error) {
-        NSLog(@"ERROR");
-    }];
-    
-//    {
-//    UserId:3,
-//    Numero: "5105105105105100",
-//    Ano: 19,
-//    Mes:12,
-//    Cvc:"123"
-//    }
     // Do any additional setup after loading the view.
 }
 
@@ -57,7 +48,35 @@
 */
 
 - (IBAction)didClickLogin:(id)sender {
+    LoginUser* user = [[LoginUser alloc]init];
+    
+    user.userName = _loginLabel.text;
+    user.userPass = _passLabel.text;
+    
+    
+    [MCRequesterLogin.new loginWithSuccessBlock: user
+                                   successBlock:^(NSArray *results) {
+                                       [self login];
+                                   } errorBlock:^(NSError *error) {
+                                       NSLog(@"ERRO!!!");
+                                   }];
+    
 }
 - (IBAction)didClickSignIn:(id)sender {
+    
+//    user.userName = @"humberto";
+//    user.userPass = @"123123";
+//    
+//    [MCRequesterLogin.new signInWithSucessBlock:user successBlock:^{
+//        NSLog(@"Cadastrado com sucesso");
+//    } errorBlock:^(NSError *error) {
+//        NSLog(@"Erro ao cadastrar %@", error);
+//    }];
+}
+- (void)login{
+     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+     UIViewController *view = [storyboard instantiateViewControllerWithIdentifier:@"principal"];
+    [self presentViewController:view animated:YES completion:^(){ NSLog(@"Logou");
+    }];
 }
 @end

@@ -19,8 +19,6 @@
                                                       @"Ano"  : @"cardYear",
                                                       @"Mes"  : @"cardMonth",
                                                       @"Cvc"  : @"cardCvc",
-                                                      @"Id" :   @"responseID",
-                                                      @"Token" : @"responseToken"
                                                       }];
     return postMapping;
 }
