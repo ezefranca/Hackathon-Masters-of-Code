@@ -1,0 +1,21 @@
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "MasterOf",
+            "location": "Brazil South"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "MasterOf_db",
+                "serverName": "",
+                "user": "rodolfo",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "Brazil South"
+            }
+        ]
+    }
+}
