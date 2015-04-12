@@ -45,6 +45,12 @@
     t.delegate = self;
     myIndicator.hidden = YES;
     isConnect = NO;
+    
+    [self performSelector: @selector(doSearchDev:) withObject:self afterDelay: 0.0];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:NO];
 }
 
 - (void)didReceiveMemoryWarning
