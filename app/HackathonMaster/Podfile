@@ -6,3 +6,4 @@ platform :ios, '7.0'
 
 pod 'RestKit'
 pod 'CardIO'
+pod 'Mapbox-iOS-SDK'

@@ -14,7 +14,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GRMustache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ISO8601DateFormatterValueTransformer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-JRSwizzle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Mapbox-iOS-SDK-Mapbox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Mapbox-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -25,6 +50,11 @@
 			<false/>
 		</dict>
 		<key>Pods-RestKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SMCalloutView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,42 +77,72 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C5B36216C12E4C94CB4B4EE</key>
+		<key>2AE1EF60C009FBC2BEDD40D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C9A260CD37021F5FC59D97F</key>
+		<key>335F41F3EB6BA5C16D6965CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BDE4BFF3E7233BF86B5D3DE</key>
+		<key>489209C6ECCEBD34E3B44719</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D98544035509E0BF6C4533E</key>
+		<key>533317C52A0D2A8B9FFADFF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>515B18EFC3A3406F38AB3E1E</key>
+		<key>6628270A591E364920C2F45F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABD819FD792AA6A714E75BA4</key>
+		<key>6773BB39C21462D23FC81727</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFBA14F6A9F94B55C60D3871</key>
+		<key>86AE29EEEE689E9ECBD922DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FEE4F39904CBB21141716EF6</key>
+		<key>928046EF44231165DBCC3439</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1917FF6F34FDB5E3E8DA9AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2D7753722A58EF1414147D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2E497EE6B8F88DBAA6CD8A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE6545121C5BA825E5369633</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C441D3947C36F6CD85B387F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ED9BD9C9023072ADCF6C36CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
