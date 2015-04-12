@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Cartao.h"
+#import "MCRequesterCard.h"
 
 @interface LoginViewController : UIViewController
 

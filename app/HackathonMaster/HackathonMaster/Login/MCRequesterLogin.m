@@ -48,6 +48,7 @@
         if (successBlock) {
             successBlock();
             NSLog(@"%@", responseObject);
+            NSArray * myNewArray = [NSArray arrayWithObjects:responseObject, nil];
         }
     } andErrorBlock:^(NSError *error) {
         if (errorBlock) {

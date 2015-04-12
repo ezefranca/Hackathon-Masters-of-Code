@@ -16,6 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Cartao *card = [[Cartao alloc]init];
+    card.userID = @"3";
+    card.cardNumber = @"5105105105105100";
+    card.cardYear = @"19";
+    card.cardMonth = @"12";
+    card.cardCvC = @"123";
+    
+
+    
+    [MCRequesterCard.new addCardWithSucessBlock:card successBlock:^{
+        NSLog(@"ENVIADO");
+    } errorBlock:^(NSError *error) {
+        NSLog(@"ERROR");
+    }];
+    
+//    {
+//    UserId:3,
+//    Numero: "5105105105105100",
+//    Ano: 19,
+//    Mes:12,
+//    Cvc:"123"
+//    }
     // Do any additional setup after loading the view.
 }
 

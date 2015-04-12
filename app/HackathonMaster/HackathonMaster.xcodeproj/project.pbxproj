@@ -20,10 +20,12 @@
 		F7EA588D1AD9B289002ACBBB /* MCNotificationRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA588C1AD9B289002ACBBB /* MCNotificationRequester.m */; };
 		F7EA58901AD9B4FD002ACBBB /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA588F1AD9B4FD002ACBBB /* Base64.m */; };
 		F7EA58951AD9B65B002ACBBB /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58941AD9B65B002ACBBB /* Usuario.m */; };
-		F7EA58981AD9B9B0002ACBBB /* MCRequesterCartao.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58971AD9B9B0002ACBBB /* MCRequesterCartao.m */; };
 		F7EA589B1AD9BBF0002ACBBB /* MCRequesterLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA589A1AD9BBF0002ACBBB /* MCRequesterLogin.m */; };
 		F7EA589E1AD9BD6A002ACBBB /* LoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA589D1AD9BD6A002ACBBB /* LoginUser.m */; };
 		F7EA58A61AD9D126002ACBBB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58A51AD9D126002ACBBB /* LoginViewController.m */; };
+		F7EA58A91AD9D47F002ACBBB /* CadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58A81AD9D47F002ACBBB /* CadastroViewController.m */; };
+		F7EA58AD1AD9E6FD002ACBBB /* Cartao.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58AC1AD9E6FD002ACBBB /* Cartao.m */; };
+		F7EA58B01AD9E862002ACBBB /* MCRequesterCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58AF1AD9E862002ACBBB /* MCRequesterCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +65,6 @@
 		F7EA588F1AD9B4FD002ACBBB /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		F7EA58931AD9B65B002ACBBB /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Usuario.h; path = user/Usuario.h; sourceTree = "<group>"; };
 		F7EA58941AD9B65B002ACBBB /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Usuario.m; path = user/Usuario.m; sourceTree = "<group>"; };
-		F7EA58961AD9B9B0002ACBBB /* MCRequesterCartao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCRequesterCartao.h; path = Cartao/MCRequesterCartao.h; sourceTree = "<group>"; };
-		F7EA58971AD9B9B0002ACBBB /* MCRequesterCartao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCRequesterCartao.m; path = Cartao/MCRequesterCartao.m; sourceTree = "<group>"; };
 		F7EA58991AD9BBF0002ACBBB /* MCRequesterLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCRequesterLogin.h; path = Login/MCRequesterLogin.h; sourceTree = "<group>"; };
 		F7EA589A1AD9BBF0002ACBBB /* MCRequesterLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCRequesterLogin.m; path = Login/MCRequesterLogin.m; sourceTree = "<group>"; };
 		F7EA589C1AD9BD6A002ACBBB /* LoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginUser.h; path = user/LoginUser.h; sourceTree = "<group>"; };
@@ -72,6 +72,12 @@
 		F7EA58A01AD9BF19002ACBBB /* DSMappedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSMappedEntity.h; path = Login/DSMappedEntity.h; sourceTree = "<group>"; };
 		F7EA58A41AD9D126002ACBBB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F7EA58A51AD9D126002ACBBB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F7EA58A71AD9D47F002ACBBB /* CadastroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroViewController.h; sourceTree = "<group>"; };
+		F7EA58A81AD9D47F002ACBBB /* CadastroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CadastroViewController.m; sourceTree = "<group>"; };
+		F7EA58AB1AD9E6FD002ACBBB /* Cartao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cartao.h; path = Cartao/Cartao.h; sourceTree = "<group>"; };
+		F7EA58AC1AD9E6FD002ACBBB /* Cartao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cartao.m; path = Cartao/Cartao.m; sourceTree = "<group>"; };
+		F7EA58AE1AD9E862002ACBBB /* MCRequesterCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCRequesterCard.h; path = Cartao/MCRequesterCard.h; sourceTree = "<group>"; };
+		F7EA58AF1AD9E862002ACBBB /* MCRequesterCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCRequesterCard.m; path = Cartao/MCRequesterCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,10 +186,10 @@
 				F7EA588C1AD9B289002ACBBB /* MCNotificationRequester.m */,
 				F7EA588E1AD9B4FD002ACBBB /* Base64.h */,
 				F7EA588F1AD9B4FD002ACBBB /* Base64.m */,
-				F7EA58961AD9B9B0002ACBBB /* MCRequesterCartao.h */,
-				F7EA58971AD9B9B0002ACBBB /* MCRequesterCartao.m */,
 				F7EA58991AD9BBF0002ACBBB /* MCRequesterLogin.h */,
 				F7EA589A1AD9BBF0002ACBBB /* MCRequesterLogin.m */,
+				F7EA58AE1AD9E862002ACBBB /* MCRequesterCard.h */,
+				F7EA58AF1AD9E862002ACBBB /* MCRequesterCard.m */,
 			);
 			name = Web;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 		F7EA58911AD9B624002ACBBB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA58AA1AD9E6DE002ACBBB /* Cartao */,
 				F7EA589F1AD9BEF6002ACBBB /* Util */,
 				F7EA58921AD9B63A002ACBBB /* User */,
 				F774974A1AD9AB8500734C14 /* Web */,
@@ -226,8 +233,19 @@
 				F774972C1AD9AAD600734C14 /* SecondViewController.m */,
 				F7EA58A41AD9D126002ACBBB /* LoginViewController.h */,
 				F7EA58A51AD9D126002ACBBB /* LoginViewController.m */,
+				F7EA58A71AD9D47F002ACBBB /* CadastroViewController.h */,
+				F7EA58A81AD9D47F002ACBBB /* CadastroViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F7EA58AA1AD9E6DE002ACBBB /* Cartao */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA58AB1AD9E6FD002ACBBB /* Cartao.h */,
+				F7EA58AC1AD9E6FD002ACBBB /* Cartao.m */,
+			);
+			name = Cartao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,12 +383,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EA58A91AD9D47F002ACBBB /* CadastroViewController.m in Sources */,
+				F7EA58B01AD9E862002ACBBB /* MCRequesterCard.m in Sources */,
 				F7EA589B1AD9BBF0002ACBBB /* MCRequesterLogin.m in Sources */,
-				F7EA58981AD9B9B0002ACBBB /* MCRequesterCartao.m in Sources */,
 				F7EA58901AD9B4FD002ACBBB /* Base64.m in Sources */,
 				F774972D1AD9AAD600734C14 /* SecondViewController.m in Sources */,
 				F7EA588D1AD9B289002ACBBB /* MCNotificationRequester.m in Sources */,
 				F77497271AD9AAD600734C14 /* AppDelegate.m in Sources */,
+				F7EA58AD1AD9E6FD002ACBBB /* Cartao.m in Sources */,
 				F7EA589E1AD9BD6A002ACBBB /* LoginUser.m in Sources */,
 				F7EA58951AD9B65B002ACBBB /* Usuario.m in Sources */,
 				F7EA58A61AD9D126002ACBBB /* LoginViewController.m in Sources */,

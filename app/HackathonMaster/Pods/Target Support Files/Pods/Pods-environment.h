@@ -12,6 +12,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking 3
 #define COCOAPODS_VERSION_PATCH_AFNetworking 4
 
+// CardIO
+#define COCOAPODS_POD_AVAILABLE_CardIO
+#define COCOAPODS_VERSION_MAJOR_CardIO 5
+#define COCOAPODS_VERSION_MINOR_CardIO 0
+#define COCOAPODS_VERSION_PATCH_CardIO 3
+
 // ISO8601DateFormatterValueTransformer
 #define COCOAPODS_POD_AVAILABLE_ISO8601DateFormatterValueTransformer
 #define COCOAPODS_VERSION_MAJOR_ISO8601DateFormatterValueTransformer 0
