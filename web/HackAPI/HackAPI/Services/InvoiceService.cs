@@ -9,13 +9,12 @@ namespace HackAPI.Services
 {
     public class InvoiceService
     {
-        public Pedido EfetuarPagamento(Cadastro usuario, Cartao cartao, Produto produto, int quantidade)
+        public Pedido EfetuarPagamento(Cadastro usuario, Produto produto, int quantidade)
         {
             var pedido = new Pedido
             {
                 Valor = produto.Preco*quantidade,
                 Quantidade = quantidade,
-                Cartao = cartao,
                 Produto = produto,
                 Usuario = usuario
             };
@@ -23,7 +22,6 @@ namespace HackAPI.Services
             using (var context = new ApplicationDbContext())
             {
                 context.Cadastro.Attach(usuario);
-                context.Cartoes.Attach(cartao);
                 context.Produtos.Attach(produto);
                 context.Pedidos.Add(pedido);
                 context.SaveChanges();
@@ -34,38 +32,16 @@ namespace HackAPI.Services
             PaymentsApi.PrivateApiKey = "MQ10w7l+OHsdsspzkDVcQToP2n5GVs83iM5c2aLydqR5YFFQL0ODSXAOkNtXTToq";
 
             PaymentsApi api = new PaymentsApi();
-            Invoice invoice = new Invoice();
-            invoice.Currency = "USD";
-            invoice.Email = pedido.Usuario.UserName+ "@mastercard.com";
-            List<InvoiceItem> items = new List<InvoiceItem>();
-            InvoiceItem items1 = new InvoiceItem();
-            items1.Amount = Convert.ToInt64(pedido.Valor.ToString("##.00").Replace(",", ""));
-            items1.Quantity = pedido.Quantidade;
-            
-            items.Add(items1);
-            invoice.Items = items;
-            invoice.Name = pedido.Produto.Nome;
-            invoice.Reference = pedido.Produto.Id.ToString();
-            invoice.SuppliedDate = 2394839384000;
-            
-            try
-            {
-                invoice = (Invoice)api.Create(invoice);
-            }
-            catch (Exception e)
-            {
-             
-            }
-
-          
-            api=new PaymentsApi();
+        
             Payment payment = new Payment();
-            payment.Amount = Convert.ToInt64(pedido.Valor.ToString("##.00").Replace(",", ""));
+            payment.Amount = Convert.ToInt64(pedido.Valor.ToString("##.00").Replace(",", "").Replace(".", ""));
             payment.Currency = "USD";
             payment.Description = pedido.Produto.Nome;
             payment.Reference = pedido.Id.ToString();
-            payment.Token = pedido.Cartao.Token;
-            payment.Invoice =invoice.Id;
+
+            var customer = (Customer)api.Find(typeof(Customer), usuario.IdMaster);
+
+            payment.Customer=customer;
             try
             {
                 payment = (Payment)api.Create(payment);

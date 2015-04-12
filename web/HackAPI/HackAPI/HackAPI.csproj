@@ -229,10 +229,17 @@
     <Compile Include="Migrations\201504120123271_invoice.Designer.cs">
       <DependentUpon>201504120123271_invoice.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504120423002_customer.cs" />
+    <Compile Include="Migrations\201504120423002_customer.Designer.cs">
+      <DependentUpon>201504120423002_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504120441165_removecard.cs" />
+    <Compile Include="Migrations\201504120441165_removecard.Designer.cs">
+      <DependentUpon>201504120441165_removecard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Cadastro.cs" />
-    <Compile Include="Models\Cartao.cs" />
     <Compile Include="Models\Pedido.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -335,6 +342,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504120123271_invoice.resx">
       <DependentUpon>201504120123271_invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504120423002_customer.resx">
+      <DependentUpon>201504120423002_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504120441165_removecard.resx">
+      <DependentUpon>201504120441165_removecard.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

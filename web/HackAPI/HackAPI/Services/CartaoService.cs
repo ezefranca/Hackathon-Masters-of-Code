@@ -9,49 +9,41 @@ namespace HackAPI.Services
 {
     public class CartaoService
     {
-        public Cartao SaveCartao(CartaoRequest dados, Cadastro usuario)
+        public Cadastro SaveCartao(CartaoRequest dados, Cadastro usuario)
         {
             //chamar api da master
             PaymentsApi.PublicApiKey = "sbpb_NjQ5MGEzN2ItMjUyZS00N2NjLWFlOTAtY2E4ZDRkN2MzNGQ1";
             PaymentsApi.PrivateApiKey = "MQ10w7l+OHsdsspzkDVcQToP2n5GVs83iM5c2aLydqR5YFFQL0ODSXAOkNtXTToq";
 
             PaymentsApi api = new PaymentsApi();
-            CardToken cardToken = new CardToken();
+            Customer customer = new Customer();
+
             Card card = new Card();
             card.Cvc = dados.Cvc;
             card.ExpMonth = dados.Mes;
             card.ExpYear = dados.Ano;
             card.Number = dados.Numero;
-            cardToken.Card = card;
 
-            cardToken = (CardToken)api.Create(cardToken);
 
-            var cartao = new Cartao { Token = cardToken.Id, Dono = usuario };
+            customer.Card = card;
+            customer.Email =usuario.UserName+ "@mastercard.com";
+            customer.Name = usuario.UserName;
+            customer.Reference = usuario.Id.ToString();
+
+            customer = (Customer)api.Create(customer);
+            usuario.IdMaster = customer.Id;
+           // var cartao = new Cartao { Token = cardToken.Id, Dono = usuario };
 
             using (var context = new ApplicationDbContext())
             {
                 context.Cadastro.Attach(usuario);
-                context.Cartoes.Add(cartao);
+                
                 context.SaveChanges();
             }
 
-            return cartao;
+            return usuario;
         }
 
-        public List<Cartao> ListByUser(int userId)
-        {
-            using (var context = new ApplicationDbContext())
-            {
-                return context.Cartoes.Where(a => a.Dono.Id == userId).ToList();
-            }
-        }
-
-        public Cartao Get(int cartaoId)
-        {
-            using (var context = new ApplicationDbContext())
-            {
-                return context.Cartoes.FirstOrDefault(a => a.Id == cartaoId);
-            }
-        }
+       
     }
 }

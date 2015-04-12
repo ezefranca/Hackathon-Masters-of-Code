@@ -15,13 +15,9 @@ namespace HackAPI.Controllers
             try
             {
                 var serviceCadastro = new CadastroService();
-                var usuario = serviceCadastro.Get(dados.UserId);
+                var usuario =serviceCadastro.SaveCartao(dados, dados.UserId);
 
-                var service = new CartaoService();
-
-                var cartao = service.SaveCartao(dados,usuario);
-
-                return Request.CreateResponse(HttpStatusCode.OK, cartao);
+                return Request.CreateResponse(HttpStatusCode.OK, usuario);
 
             }
             catch (Exception ex)
@@ -29,24 +25,6 @@ namespace HackAPI.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
-
-        [HttpGet]
-        public HttpResponseMessage List(int userId)
-        {
-            try
-            {
-                var service = new CartaoService();
-                var cartoes = service.ListByUser(userId);
-
-                return Request.CreateResponse(HttpStatusCode.OK, cartoes);
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
-            }
-
-        }
-
 
     }
 
