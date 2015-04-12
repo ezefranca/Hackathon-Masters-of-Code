@@ -33,6 +33,7 @@
 		F7EA58C01ADA0F83002ACBBB /* Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58BF1ADA0F83002ACBBB /* Invoice.m */; };
 		F7EA58C71ADA146C002ACBBB /* HistoricoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58C51ADA146C002ACBBB /* HistoricoCell.m */; };
 		F7EA58C81ADA146C002ACBBB /* HistoricoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EA58C61ADA146C002ACBBB /* HistoricoCell.xib */; };
+		F7EA58CB1ADA250A002ACBBB /* Produtos.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58CA1ADA250A002ACBBB /* Produtos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		F7EA58C41ADA146C002ACBBB /* HistoricoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoricoCell.h; path = CustomCells/HistoricoCell.h; sourceTree = "<group>"; };
 		F7EA58C51ADA146C002ACBBB /* HistoricoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoricoCell.m; path = CustomCells/HistoricoCell.m; sourceTree = "<group>"; };
 		F7EA58C61ADA146C002ACBBB /* HistoricoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoricoCell.xib; path = CustomCells/HistoricoCell.xib; sourceTree = "<group>"; };
+		F7EA58C91ADA250A002ACBBB /* Produtos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Produtos.h; sourceTree = "<group>"; };
+		F7EA58CA1ADA250A002ACBBB /* Produtos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Produtos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +294,8 @@
 			children = (
 				F7EA58BE1ADA0F83002ACBBB /* Invoice.h */,
 				F7EA58BF1ADA0F83002ACBBB /* Invoice.m */,
+				F7EA58C91ADA250A002ACBBB /* Produtos.h */,
+				F7EA58CA1ADA250A002ACBBB /* Produtos.m */,
 			);
 			name = Invoice;
 			sourceTree = "<group>";
@@ -437,6 +442,7 @@
 				F7EA589B1AD9BBF0002ACBBB /* MCRequesterLogin.m in Sources */,
 				F7EA58901AD9B4FD002ACBBB /* Base64.m in Sources */,
 				F774972D1AD9AAD600734C14 /* MapaViewController.m in Sources */,
+				F7EA58CB1ADA250A002ACBBB /* Produtos.m in Sources */,
 				F7EA58B51ADA02AC002ACBBB /* MachineCell.m in Sources */,
 				F7EA58C71ADA146C002ACBBB /* HistoricoCell.m in Sources */,
 				F7EA588D1AD9B289002ACBBB /* MCNotificationRequester.m in Sources */,

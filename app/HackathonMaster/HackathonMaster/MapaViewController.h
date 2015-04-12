@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mapbox.h"
 
-@interface MapaViewController : UIViewController
+@interface MapaViewController : UIViewController <RMMapViewDelegate>
 
 
 @end

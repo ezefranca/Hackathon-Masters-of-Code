@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "MCRequesterInvoice.h"
+#import "Invoice.h"
+#import "HistoricoCell.h"
 
-@interface HistoricoViewController : UIViewController
+@interface HistoricoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
+  
+}
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic)   NSMutableArray* postagem;
 @end

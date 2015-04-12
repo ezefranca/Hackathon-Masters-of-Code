@@ -12,7 +12,7 @@
 
 -(void)listInvoiceWithSuccessBlock:(Invoice *)invoice successBlock:(void (^)(NSArray *results))successBlock errorBlock:(void (^)(NSError *error))errorBlock {
     
-    RKResponseDescriptor *responseDescriptor =  [RKResponseDescriptor responseDescriptorWithMapping:[Invoice mappingForEntity]
+    RKResponseDescriptor *responseDescriptor =  [RKResponseDescriptor responseDescriptorWithMapping:[Produtos mappingForEntity]
                                                                                              method:RKRequestMethodGET
                                                                                         pathPattern:nil
                                                                                             keyPath:nil

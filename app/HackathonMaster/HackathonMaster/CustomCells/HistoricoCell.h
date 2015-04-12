@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface HistoricoCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *imagem;
+@property (strong, nonatomic) IBOutlet UILabel *titulo;
+@property (strong, nonatomic) IBOutlet UILabel *preco;
+@property (strong, nonatomic) IBOutlet UILabel *quantidade;
 
 @end
