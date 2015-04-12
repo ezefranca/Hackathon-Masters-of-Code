@@ -67,7 +67,8 @@ namespace HackAPI.Services
                 card.Cvc = dados.Cvc;
                 card.ExpMonth = dados.Mes;
                 card.ExpYear = dados.Ano;
-                card.Number = dados.Numero;
+                card.Number = "5555555555554444"; //numero fake para a demo de card.io
+                //card.Number = dados.Numero;
 
                 customer.Card = card;
                 customer.Email = user.UserName + "@mastercard.com";
