@@ -67,3 +67,4 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migratio
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.carts.resources
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.procuts.resources
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.invoice.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csprojResolveAssemblyReference.cache
