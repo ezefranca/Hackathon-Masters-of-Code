@@ -16,9 +16,9 @@ namespace HackAPI.Controllers
             {
                 var service = new CadastroService();
                 service.Salvar(dados);
+                var usuario = service.SaveCartao(dados.DadosCartao, dados.Id);
 
                 return Request.CreateResponse(HttpStatusCode.OK, dados);
-
             }
             catch (Exception ex)
             {

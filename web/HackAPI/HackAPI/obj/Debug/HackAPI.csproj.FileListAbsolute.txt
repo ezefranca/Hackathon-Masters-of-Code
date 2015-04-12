@@ -69,3 +69,4 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migratio
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.invoice.resources
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.customer.resources
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.removecard.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csprojResolveAssemblyReference.cache
