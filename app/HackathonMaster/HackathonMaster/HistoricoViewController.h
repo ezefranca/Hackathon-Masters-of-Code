@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  HistoricoViewController.h
 //  HackathonMaster
 //
 //  Created by Ezequiel on 11/04/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface HistoricoViewController : UIViewController
 
 @end
-

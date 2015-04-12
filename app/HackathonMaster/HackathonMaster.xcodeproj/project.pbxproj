@@ -11,7 +11,7 @@
 		F77497241AD9AAD600734C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F77497231AD9AAD600734C14 /* main.m */; };
 		F77497271AD9AAD600734C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F77497261AD9AAD600734C14 /* AppDelegate.m */; };
 		F774972A1AD9AAD600734C14 /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77497291AD9AAD600734C14 /* MachineViewController.m */; };
-		F774972D1AD9AAD600734C14 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774972C1AD9AAD600734C14 /* SecondViewController.m */; };
+		F774972D1AD9AAD600734C14 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774972C1AD9AAD600734C14 /* MapaViewController.m */; };
 		F77497301AD9AAD600734C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F774972E1AD9AAD600734C14 /* Main.storyboard */; };
 		F77497321AD9AAD600734C14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77497311AD9AAD600734C14 /* Images.xcassets */; };
 		F77497351AD9AAD600734C14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77497331AD9AAD600734C14 /* LaunchScreen.xib */; };
@@ -28,6 +28,9 @@
 		F7EA58B01AD9E862002ACBBB /* MCRequesterCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58AF1AD9E862002ACBBB /* MCRequesterCard.m */; };
 		F7EA58B51ADA02AC002ACBBB /* MachineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58B31ADA02AC002ACBBB /* MachineCell.m */; };
 		F7EA58B61ADA02AC002ACBBB /* MachineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EA58B41ADA02AC002ACBBB /* MachineCell.xib */; };
+		F7EA58B91ADA0BEB002ACBBB /* HistoricoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58B81ADA0BEB002ACBBB /* HistoricoViewController.m */; };
+		F7EA58BC1ADA0ED3002ACBBB /* MCRequesterInvoice.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58BB1ADA0ED3002ACBBB /* MCRequesterInvoice.m */; };
+		F7EA58C01ADA0F83002ACBBB /* Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58BF1ADA0F83002ACBBB /* Invoice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +54,8 @@
 		F77497261AD9AAD600734C14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F77497281AD9AAD600734C14 /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
 		F77497291AD9AAD600734C14 /* MachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
-		F774972B1AD9AAD600734C14 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F774972C1AD9AAD600734C14 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F774972B1AD9AAD600734C14 /* MapaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		F774972C1AD9AAD600734C14 /* MapaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 		F774972F1AD9AAD600734C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F77497311AD9AAD600734C14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F77497341AD9AAD600734C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,6 +86,12 @@
 		F7EA58B21ADA02AC002ACBBB /* MachineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MachineCell.h; path = CustomCells/MachineCell.h; sourceTree = "<group>"; };
 		F7EA58B31ADA02AC002ACBBB /* MachineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MachineCell.m; path = CustomCells/MachineCell.m; sourceTree = "<group>"; };
 		F7EA58B41ADA02AC002ACBBB /* MachineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MachineCell.xib; path = CustomCells/MachineCell.xib; sourceTree = "<group>"; };
+		F7EA58B71ADA0BEB002ACBBB /* HistoricoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricoViewController.h; sourceTree = "<group>"; };
+		F7EA58B81ADA0BEB002ACBBB /* HistoricoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricoViewController.m; sourceTree = "<group>"; };
+		F7EA58BA1ADA0ED3002ACBBB /* MCRequesterInvoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCRequesterInvoice.h; path = Invoice/MCRequesterInvoice.h; sourceTree = "<group>"; };
+		F7EA58BB1ADA0ED3002ACBBB /* MCRequesterInvoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCRequesterInvoice.m; path = Invoice/MCRequesterInvoice.m; sourceTree = "<group>"; };
+		F7EA58BE1ADA0F83002ACBBB /* Invoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Invoice.h; path = Invoice/Invoice.h; sourceTree = "<group>"; };
+		F7EA58BF1ADA0F83002ACBBB /* Invoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Invoice.m; path = Invoice/Invoice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +205,8 @@
 				F7EA589A1AD9BBF0002ACBBB /* MCRequesterLogin.m */,
 				F7EA58AE1AD9E862002ACBBB /* MCRequesterCard.h */,
 				F7EA58AF1AD9E862002ACBBB /* MCRequesterCard.m */,
+				F7EA58BA1ADA0ED3002ACBBB /* MCRequesterInvoice.h */,
+				F7EA58BB1ADA0ED3002ACBBB /* MCRequesterInvoice.m */,
 			);
 			name = Web;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 		F7EA58911AD9B624002ACBBB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA58BD1ADA0F72002ACBBB /* Invoice */,
 				F7EA58AA1AD9E6DE002ACBBB /* Cartao */,
 				F7EA589F1AD9BEF6002ACBBB /* Util */,
 				F7EA58921AD9B63A002ACBBB /* User */,
@@ -235,12 +247,14 @@
 			children = (
 				F77497281AD9AAD600734C14 /* MachineViewController.h */,
 				F77497291AD9AAD600734C14 /* MachineViewController.m */,
-				F774972B1AD9AAD600734C14 /* SecondViewController.h */,
-				F774972C1AD9AAD600734C14 /* SecondViewController.m */,
+				F774972B1AD9AAD600734C14 /* MapaViewController.h */,
+				F774972C1AD9AAD600734C14 /* MapaViewController.m */,
 				F7EA58A41AD9D126002ACBBB /* LoginViewController.h */,
 				F7EA58A51AD9D126002ACBBB /* LoginViewController.m */,
 				F7EA58A71AD9D47F002ACBBB /* CadastroViewController.h */,
 				F7EA58A81AD9D47F002ACBBB /* CadastroViewController.m */,
+				F7EA58B71ADA0BEB002ACBBB /* HistoricoViewController.h */,
+				F7EA58B81ADA0BEB002ACBBB /* HistoricoViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -262,6 +276,15 @@
 				F7EA58B41ADA02AC002ACBBB /* MachineCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F7EA58BD1ADA0F72002ACBBB /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA58BE1ADA0F83002ACBBB /* Invoice.h */,
+				F7EA58BF1ADA0F83002ACBBB /* Invoice.m */,
+			);
+			name = Invoice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,15 +427,18 @@
 				F7EA58B01AD9E862002ACBBB /* MCRequesterCard.m in Sources */,
 				F7EA589B1AD9BBF0002ACBBB /* MCRequesterLogin.m in Sources */,
 				F7EA58901AD9B4FD002ACBBB /* Base64.m in Sources */,
-				F774972D1AD9AAD600734C14 /* SecondViewController.m in Sources */,
+				F774972D1AD9AAD600734C14 /* MapaViewController.m in Sources */,
 				F7EA58B51ADA02AC002ACBBB /* MachineCell.m in Sources */,
 				F7EA588D1AD9B289002ACBBB /* MCNotificationRequester.m in Sources */,
+				F7EA58B91ADA0BEB002ACBBB /* HistoricoViewController.m in Sources */,
 				F77497271AD9AAD600734C14 /* AppDelegate.m in Sources */,
 				F7EA58AD1AD9E6FD002ACBBB /* Cartao.m in Sources */,
+				F7EA58BC1ADA0ED3002ACBBB /* MCRequesterInvoice.m in Sources */,
 				F7EA589E1AD9BD6A002ACBBB /* LoginUser.m in Sources */,
 				F7EA58951AD9B65B002ACBBB /* Usuario.m in Sources */,
 				F7EA58A61AD9D126002ACBBB /* LoginViewController.m in Sources */,
 				F774974D1AD9ABBA00734C14 /* MCRequesters.m in Sources */,
+				F7EA58C01ADA0F83002ACBBB /* Invoice.m in Sources */,
 				F774972A1AD9AAD600734C14 /* MachineViewController.m in Sources */,
 				F77497241AD9AAD600734C14 /* main.m in Sources */,
 			);
