@@ -220,6 +220,10 @@
     <Compile Include="Migrations\201504112210524_carts.Designer.cs">
       <DependentUpon>201504112210524_carts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504120000207_procuts.cs" />
+    <Compile Include="Migrations\201504120000207_procuts.Designer.cs">
+      <DependentUpon>201504120000207_procuts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Cadastro.cs" />
@@ -315,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504112210524_carts.resx">
       <DependentUpon>201504112210524_carts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504120000207_procuts.resx">
+      <DependentUpon>201504120000207_procuts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

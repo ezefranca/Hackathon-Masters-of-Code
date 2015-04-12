@@ -1,3 +1,5 @@
+using HackAPI.Models;
+
 namespace HackAPI.Migrations
 {
     using System;
@@ -19,12 +21,13 @@ namespace HackAPI.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
             //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
+            context.Produtos.AddOrUpdate(
+              p => p.Nome,
+              new Produto {Imagem = "lolo.gif",Nome = "Chocolate Lolo",Preco =23.2M,Quantidade = 3},
+              new Produto {Imagem = "api.gif",Nome = "As melhores do Ari",Preco =23.2M,Quantidade = 5},
+              new Produto {Imagem = "cocacola.gif",Nome = "Coca Cola",Preco =23.2M,Quantidade = 1},
+              new Produto {Imagem = "ticktack.gif",Nome = "Tick Tack",Preco =23.2M,Quantidade = 3}
+            );
             //
         }
     }
