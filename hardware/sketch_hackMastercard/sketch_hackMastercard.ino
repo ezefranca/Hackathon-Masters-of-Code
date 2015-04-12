@@ -1,5 +1,5 @@
 #include <LiquidCrystal.h>
-#include <SoftwareSerial.h>
+
 
 int motorPin1 = 8;  
 int motorPin2 = 9;  
@@ -8,10 +8,10 @@ int motorPin4 = 11;
 
 char c;
 
-LiquidCrystal lcd(1, 0, A5, A4, A3, A2);
+LiquidCrystal lcd(3, 2, A5, A4, A3, A2);
        
-SoftwareSerial mySerial(2, 3);
-                  
+
+                
 int switchPin = 7;
 int ledPin = 13;
 boolean lastButton = LOW;
@@ -25,6 +25,7 @@ int times = 0;
 int lookup[8] = {B01000, B01100, B00100, B00110, B00010, B00011, B00001, B01001};
 
 void setup() {
+ 
   pinMode(motorPin1, OUTPUT);
   pinMode(motorPin2, OUTPUT);
   pinMode(motorPin3, OUTPUT);
@@ -39,33 +40,38 @@ void setup() {
   pinMode(switchPin, INPUT);
   
   digitalWrite(ledPin, LOW);
-  Serial.begin(57600);
+
+  Serial.begin(9600);
+
 }
 
 void loop() { 
-  if (mySerial.available()) {
-    c = mySerial.read();
-    if (c != NULL) {
-      mySerial.write(c);
+  if (Serial.available()) {
+    c = Serial.read();
+
+    if (c == 'o') {
+      Serial.write(c);
+      acionar = true;
     }
   } 
   
-  currentButton = debounce(lastButton);
+  /*currentButton = debounce(lastButton);
   if(lastButton == LOW && currentButton == HIGH) {
       acionar = true;
   }
   lastButton = currentButton;
-   
+   */
   if (acionar) {
     abrir();
     escreve();
-    delay(2000);
+    delay(3000);
     fechar();
     acionar = false;
   }
 }
 
 void escreve() {
+  
   lcd.setCursor(0, 0);
   lcd.print("Retire seu     ");
   lcd.setCursor(0, 1);
