@@ -34,6 +34,13 @@
 		F7EA58C71ADA146C002ACBBB /* HistoricoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58C51ADA146C002ACBBB /* HistoricoCell.m */; };
 		F7EA58C81ADA146C002ACBBB /* HistoricoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EA58C61ADA146C002ACBBB /* HistoricoCell.xib */; };
 		F7EA58CB1ADA250A002ACBBB /* Produtos.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58CA1ADA250A002ACBBB /* Produtos.m */; };
+		F7EA58D01ADA3B08002ACBBB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EA58CF1ADA3B08002ACBBB /* CoreBluetooth.framework */; };
+		F7EA58D21ADA3B16002ACBBB /* libbluekitBLE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EA58D11ADA3B16002ACBBB /* libbluekitBLE.a */; };
+		F7EA58D51ADA3B23002ACBBB /* SBTableAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58D41ADA3B23002ACBBB /* SBTableAlert.m */; };
+		F7EA58D61ADA3F62002ACBBB /* SBTableAlert.h in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58D31ADA3B23002ACBBB /* SBTableAlert.h */; };
+		F7EA58D71ADA3F62002ACBBB /* bluekitBle.h in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58CD1ADA3A4D002ACBBB /* bluekitBle.h */; };
+		F7EA58D81ADA3F62002ACBBB /* blueKitDef.h in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58CE1ADA3A4D002ACBBB /* blueKitDef.h */; };
+		F7EA58DB1ADA43EE002ACBBB /* CompraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58DA1ADA43EE002ACBBB /* CompraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +107,14 @@
 		F7EA58C61ADA146C002ACBBB /* HistoricoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoricoCell.xib; path = CustomCells/HistoricoCell.xib; sourceTree = "<group>"; };
 		F7EA58C91ADA250A002ACBBB /* Produtos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Produtos.h; sourceTree = "<group>"; };
 		F7EA58CA1ADA250A002ACBBB /* Produtos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Produtos.m; sourceTree = "<group>"; };
+		F7EA58CD1ADA3A4D002ACBBB /* bluekitBle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bluekitBle.h; path = bluetooth/bluekitBle.h; sourceTree = "<group>"; };
+		F7EA58CE1ADA3A4D002ACBBB /* blueKitDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blueKitDef.h; path = bluetooth/blueKitDef.h; sourceTree = "<group>"; };
+		F7EA58CF1ADA3B08002ACBBB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F7EA58D11ADA3B16002ACBBB /* libbluekitBLE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbluekitBLE.a; path = HackathonMaster/bluetooth/libbluekitBLE.a; sourceTree = "<group>"; };
+		F7EA58D31ADA3B23002ACBBB /* SBTableAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTableAlert.h; path = bluetooth/SBTableAlert.h; sourceTree = "<group>"; };
+		F7EA58D41ADA3B23002ACBBB /* SBTableAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBTableAlert.m; path = bluetooth/SBTableAlert.m; sourceTree = "<group>"; };
+		F7EA58D91ADA43EE002ACBBB /* CompraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompraViewController.h; sourceTree = "<group>"; };
+		F7EA58DA1ADA43EE002ACBBB /* CompraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EA58D21ADA3B16002ACBBB /* libbluekitBLE.a in Frameworks */,
+				F7EA58D01ADA3B08002ACBBB /* CoreBluetooth.framework in Frameworks */,
 				EBEF6750AD0BFA3EA787B1DA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +150,8 @@
 		97A371CE07DA16F57ADD1031 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA58D11ADA3B16002ACBBB /* libbluekitBLE.a */,
+				F7EA58CF1ADA3B08002ACBBB /* CoreBluetooth.framework */,
 				7A2AC2B93A40C1B7A94C6D30 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -222,6 +241,7 @@
 		F7EA58911AD9B624002ACBBB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA58CC1ADA3A3E002ACBBB /* Bluetooth */,
 				F7EA58BD1ADA0F72002ACBBB /* Invoice */,
 				F7EA58AA1AD9E6DE002ACBBB /* Cartao */,
 				F7EA589F1AD9BEF6002ACBBB /* Util */,
@@ -263,6 +283,8 @@
 				F7EA58A81AD9D47F002ACBBB /* CadastroViewController.m */,
 				F7EA58B71ADA0BEB002ACBBB /* HistoricoViewController.h */,
 				F7EA58B81ADA0BEB002ACBBB /* HistoricoViewController.m */,
+				F7EA58D91ADA43EE002ACBBB /* CompraViewController.h */,
+				F7EA58DA1ADA43EE002ACBBB /* CompraViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -298,6 +320,17 @@
 				F7EA58CA1ADA250A002ACBBB /* Produtos.m */,
 			);
 			name = Invoice;
+			sourceTree = "<group>";
+		};
+		F7EA58CC1ADA3A3E002ACBBB /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA58D31ADA3B23002ACBBB /* SBTableAlert.h */,
+				F7EA58D41ADA3B23002ACBBB /* SBTableAlert.m */,
+				F7EA58CD1ADA3A4D002ACBBB /* bluekitBle.h */,
+				F7EA58CE1ADA3A4D002ACBBB /* blueKitDef.h */,
+			);
+			name = Bluetooth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +470,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EA58D61ADA3F62002ACBBB /* SBTableAlert.h in Sources */,
+				F7EA58D71ADA3F62002ACBBB /* bluekitBle.h in Sources */,
+				F7EA58D81ADA3F62002ACBBB /* blueKitDef.h in Sources */,
 				F7EA58A91AD9D47F002ACBBB /* CadastroViewController.m in Sources */,
 				F7EA58B01AD9E862002ACBBB /* MCRequesterCard.m in Sources */,
 				F7EA589B1AD9BBF0002ACBBB /* MCRequesterLogin.m in Sources */,
@@ -455,7 +491,9 @@
 				F7EA58A61AD9D126002ACBBB /* LoginViewController.m in Sources */,
 				F774974D1AD9ABBA00734C14 /* MCRequesters.m in Sources */,
 				F7EA58C01ADA0F83002ACBBB /* Invoice.m in Sources */,
+				F7EA58D51ADA3B23002ACBBB /* SBTableAlert.m in Sources */,
 				F774972A1AD9AAD600734C14 /* MachineViewController.m in Sources */,
+				F7EA58DB1ADA43EE002ACBBB /* CompraViewController.m in Sources */,
 				F77497241AD9AAD600734C14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +623,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HackathonMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HackathonMaster/bluetooth",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -596,6 +638,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HackathonMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HackathonMaster/bluetooth",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
