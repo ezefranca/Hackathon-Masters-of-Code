@@ -67,3 +67,4 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.csproj
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.Migrations.cart.resources
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.Migrations.carts.resources
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.Migrations.procuts.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Release\HackAPI.Migrations.invoice.resources

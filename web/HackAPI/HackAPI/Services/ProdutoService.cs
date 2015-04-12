@@ -13,5 +13,13 @@ namespace HackAPI.Services
                 return context.Produtos.ToList();
             }
         }
+
+        internal Produto Get(int p)
+        {
+            using (var context = new ApplicationDbContext())
+            {
+                return context.Produtos.FirstOrDefault(a => a.Id==p);
+            }
+        }
     }
 }

@@ -23,14 +23,8 @@ namespace HackAPI.Services
             card.ExpYear = dados.Ano;
             card.Number = dados.Numero;
             cardToken.Card = card;
-            try
-            {
-                cardToken = (CardToken)api.Create(cardToken);
-            }
-            catch (Exception e)
-            {
 
-            }
+            cardToken = (CardToken)api.Create(cardToken);
 
             var cartao = new Cartao { Token = cardToken.Id, Dono = usuario };
 
@@ -49,6 +43,14 @@ namespace HackAPI.Services
             using (var context = new ApplicationDbContext())
             {
                 return context.Cartoes.Where(a => a.Dono.Id == userId).ToList();
+            }
+        }
+
+        public Cartao Get(int cartaoId)
+        {
+            using (var context = new ApplicationDbContext())
+            {
+                return context.Cartoes.FirstOrDefault(a => a.Id == cartaoId);
             }
         }
     }
