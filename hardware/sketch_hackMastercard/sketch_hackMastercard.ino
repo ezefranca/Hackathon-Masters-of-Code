@@ -1,5 +1,10 @@
 #include <LiquidCrystal.h>
 
+int portSpeak(3);
+
+int melodiaEntrada[] = {660,660,660,510,660,770};
+int duracaodasnotasEntrada[] = {100, 100,100,100,100, 100};
+int pausadedoisdasnotasEntrada[] = {150, 300,300,100,300,550};
 
 int motorPin1 = 8;  
 int motorPin2 = 9;  
@@ -7,11 +12,7 @@ int motorPin3 = 10;
 int motorPin4 = 11;
 
 char c;
-
-LiquidCrystal lcd(3, 2, A5, A4, A3, A2);
-       
-
-                
+        
 int switchPin = 7;
 int ledPin = 13;
 boolean lastButton = LOW;
@@ -25,16 +26,11 @@ int times = 0;
 int lookup[8] = {B01000, B01100, B00100, B00110, B00010, B00011, B00001, B01001};
 
 void setup() {
- 
+      
   pinMode(motorPin1, OUTPUT);
   pinMode(motorPin2, OUTPUT);
   pinMode(motorPin3, OUTPUT);
   pinMode(motorPin4, OUTPUT);
-  
-  lcd.begin(16, 2);
-  lcd.print("Mastercard      ");
-  lcd.setCursor(0, 1);
-  lcd.print("Vendor Machine  ");
   
   pinMode(ledPin, OUTPUT);
   pinMode(switchPin, INPUT);
@@ -52,41 +48,21 @@ void loop() {
     if (c == 'o') {
       Serial.write(c);
       acionar = true;
+      
     }
+    
+    serialFlush();
   } 
   
-  /*currentButton = debounce(lastButton);
-  if(lastButton == LOW && currentButton == HIGH) {
-      acionar = true;
-  }
-  lastButton = currentButton;
-   */
   if (acionar) {
     abrir();
-    escreve();
-    delay(3000);
+    tocaSom();
+    delay(2000);
     fechar();
     acionar = false;
   }
 }
 
-void escreve() {
-  
-  lcd.setCursor(0, 0);
-  lcd.print("Retire seu     ");
-  lcd.setCursor(0, 1);
-  lcd.print("Produto!        ");
-  digitalWrite(ledPin, HIGH);
-}
-
-boolean debounce(boolean last) {
-  boolean current = digitalRead(switchPin);
-  if (last != current) {
-    delay(5);
-    current = digitalRead(switchPin);
-  }
-  return current;
-}
 
 void abrir()
 {
@@ -108,6 +84,17 @@ void fechar()
   
 }
 
+void tocaSom()
+{
+  for (int nota = 0; nota < 6; nota++) {
+      int duracaodanota = duracaodasnotasEntrada[nota];
+      tone(portSpeak, melodiaEntrada[nota], duracaodanota);
+      //pausa depois das notas
+      delay(pausadedoisdasnotasEntrada[nota]);
+    }
+  noTone(portSpeak);
+}
+
 void setOutput(int out)
 {
   digitalWrite(motorPin1, bitRead(lookup[out], 0));
@@ -116,3 +103,10 @@ void setOutput(int out)
   digitalWrite(motorPin4, bitRead(lookup[out], 3));
 }
 
+void serialFlush()
+{
+  while(Serial.available() > 0)
+  {
+    char t = Serial.read();
+  }
+}
