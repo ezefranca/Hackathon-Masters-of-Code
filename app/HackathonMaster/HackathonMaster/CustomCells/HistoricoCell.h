@@ -1,5 +1,5 @@
 //
-//  HistoricoViewController.h
+//  HistoricoCell.h
 //  HackathonMaster
 //
 //  Created by Ezequiel on 11/04/15.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MCRequesterInvoice.h"
 
-@interface HistoricoViewController : UIViewController
+@interface HistoricoCell : UITableViewCell
 
 @end

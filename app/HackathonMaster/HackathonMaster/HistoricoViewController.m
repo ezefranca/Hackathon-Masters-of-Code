@@ -24,6 +24,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:NO];
+    Invoice *invoice = [[Invoice alloc]init];
+    
+    invoice.userID = @"3";
+    invoice.productID = @"5";
+    invoice.cardID = @"11";
+    invoice.quantidade = @"1";
+    
+    [MCRequesterInvoice.new listInvoiceWithSuccessBlock:invoice successBlock:^(NSArray *results) {
+        NSLog(@"Retornou o historico");
+    } errorBlock:^(NSError *error) {
+        NSLog(@"Erro ao carregar o historico %@", error);
+    }];
+}
+
 /*
 #pragma mark - Navigation
 

@@ -9,7 +9,7 @@
 #import "MapaViewController.h"
 #import "Mapbox.h"
 
-#define kMapboxMapID @"examples.map-z2effxa8"
+#define kMapboxMapID @"juniormag2.ln5m5h9p"
 
 @interface MapaViewController ()
 

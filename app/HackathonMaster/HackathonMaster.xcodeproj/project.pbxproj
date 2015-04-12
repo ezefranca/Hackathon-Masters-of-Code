@@ -31,6 +31,8 @@
 		F7EA58B91ADA0BEB002ACBBB /* HistoricoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58B81ADA0BEB002ACBBB /* HistoricoViewController.m */; };
 		F7EA58BC1ADA0ED3002ACBBB /* MCRequesterInvoice.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58BB1ADA0ED3002ACBBB /* MCRequesterInvoice.m */; };
 		F7EA58C01ADA0F83002ACBBB /* Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58BF1ADA0F83002ACBBB /* Invoice.m */; };
+		F7EA58C71ADA146C002ACBBB /* HistoricoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA58C51ADA146C002ACBBB /* HistoricoCell.m */; };
+		F7EA58C81ADA146C002ACBBB /* HistoricoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EA58C61ADA146C002ACBBB /* HistoricoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,9 @@
 		F7EA58BB1ADA0ED3002ACBBB /* MCRequesterInvoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCRequesterInvoice.m; path = Invoice/MCRequesterInvoice.m; sourceTree = "<group>"; };
 		F7EA58BE1ADA0F83002ACBBB /* Invoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Invoice.h; path = Invoice/Invoice.h; sourceTree = "<group>"; };
 		F7EA58BF1ADA0F83002ACBBB /* Invoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Invoice.m; path = Invoice/Invoice.m; sourceTree = "<group>"; };
+		F7EA58C41ADA146C002ACBBB /* HistoricoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoricoCell.h; path = CustomCells/HistoricoCell.h; sourceTree = "<group>"; };
+		F7EA58C51ADA146C002ACBBB /* HistoricoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoricoCell.m; path = CustomCells/HistoricoCell.m; sourceTree = "<group>"; };
+		F7EA58C61ADA146C002ACBBB /* HistoricoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoricoCell.xib; path = CustomCells/HistoricoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +279,9 @@
 				F7EA58B21ADA02AC002ACBBB /* MachineCell.h */,
 				F7EA58B31ADA02AC002ACBBB /* MachineCell.m */,
 				F7EA58B41ADA02AC002ACBBB /* MachineCell.xib */,
+				F7EA58C41ADA146C002ACBBB /* HistoricoCell.h */,
+				F7EA58C51ADA146C002ACBBB /* HistoricoCell.m */,
+				F7EA58C61ADA146C002ACBBB /* HistoricoCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77497301AD9AAD600734C14 /* Main.storyboard in Resources */,
+				F7EA58C81ADA146C002ACBBB /* HistoricoCell.xib in Resources */,
 				F7EA58B61ADA02AC002ACBBB /* MachineCell.xib in Resources */,
 				F77497351AD9AAD600734C14 /* LaunchScreen.xib in Resources */,
 				F77497321AD9AAD600734C14 /* Images.xcassets in Resources */,
@@ -429,6 +438,7 @@
 				F7EA58901AD9B4FD002ACBBB /* Base64.m in Sources */,
 				F774972D1AD9AAD600734C14 /* MapaViewController.m in Sources */,
 				F7EA58B51ADA02AC002ACBBB /* MachineCell.m in Sources */,
+				F7EA58C71ADA146C002ACBBB /* HistoricoCell.m in Sources */,
 				F7EA588D1AD9B289002ACBBB /* MCNotificationRequester.m in Sources */,
 				F7EA58B91ADA0BEB002ACBBB /* HistoricoViewController.m in Sources */,
 				F77497271AD9AAD600734C14 /* AppDelegate.m in Sources */,

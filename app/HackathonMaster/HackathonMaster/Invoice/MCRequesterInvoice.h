@@ -9,7 +9,7 @@
 #import "MCRequesters.h"
 #import "Invoice.h"
 
-#define GET_INVOICE @"http://masterof.azurewebsites.net/api/User/Login?UserName=%@&password=%@"
+#define GET_INVOICE @"http://masterof.azurewebsites.net/api/Product/List?vendorId=1"
 #define POST_INVOICE @"http://masterof.azurewebsites.net/api/User/Cadastro"
 
 @interface MCRequesterInvoice : MCRequesters
