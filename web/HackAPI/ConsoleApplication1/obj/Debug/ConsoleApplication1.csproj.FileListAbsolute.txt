@@ -1,0 +1,8 @@
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\ConsoleApplication1\bin\Debug\SimplifySDK.dll
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

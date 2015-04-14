@@ -40,6 +40,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplifySDK, Version=1.2.0.0, Culture=neutral, PublicKeyToken=8512cbf25aedd31b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\SimplifySDK.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -58,9 +66,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
@@ -196,28 +201,70 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CheckoutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\CardController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountBindingModels.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Migrations\201504111921098_first.cs" />
+    <Compile Include="Migrations\201504111921098_first.Designer.cs">
+      <DependentUpon>201504111921098_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504112123289_cart.cs" />
+    <Compile Include="Migrations\201504112123289_cart.Designer.cs">
+      <DependentUpon>201504112123289_cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504112210524_carts.cs" />
+    <Compile Include="Migrations\201504112210524_carts.Designer.cs">
+      <DependentUpon>201504112210524_carts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504120000207_procuts.cs" />
+    <Compile Include="Migrations\201504120000207_procuts.Designer.cs">
+      <DependentUpon>201504120000207_procuts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504120123271_invoice.cs" />
+    <Compile Include="Migrations\201504120123271_invoice.Designer.cs">
+      <DependentUpon>201504120123271_invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504120423002_customer.cs" />
+    <Compile Include="Migrations\201504120423002_customer.Designer.cs">
+      <DependentUpon>201504120423002_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504120441165_removecard.cs" />
+    <Compile Include="Migrations\201504120441165_removecard.Designer.cs">
+      <DependentUpon>201504120441165_removecard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Cadastro.cs" />
+    <Compile Include="Models\Pedido.cs" />
+    <Compile Include="Models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Services\CadastroService.cs" />
+    <Compile Include="Services\CartaoService.cs" />
+    <Compile Include="Services\InvoiceService.cs" />
+    <Compile Include="Services\ProdutoService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\arytoledo.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cocacola.png" />
+    <Content Include="Content\lollo.png" />
+    <Content Include="Content\tictac.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="lib\CHANGES.txt" />
+    <Content Include="lib\json.net-license.txt" />
+    <Content Include="lib\LICENSE.txt" />
+    <Content Include="lib\SimplifySDK.dll" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -239,7 +286,8 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <None Include="Properties\PublishProfiles\MasterOf.pubxml" />
+    <None Include="Properties\PublishProfiles\masterof - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\masterof - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -270,6 +318,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Providers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -277,6 +326,29 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201504111921098_first.resx">
+      <DependentUpon>201504111921098_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504112123289_cart.resx">
+      <DependentUpon>201504112123289_cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504112210524_carts.resx">
+      <DependentUpon>201504112210524_carts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504120000207_procuts.resx">
+      <DependentUpon>201504120000207_procuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504120123271_invoice.resx">
+      <DependentUpon>201504120123271_invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504120423002_customer.resx">
+      <DependentUpon>201504120423002_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504120441165_removecard.resx">
+      <DependentUpon>201504120441165_removecard.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -19,6 +19,7 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Microsoft.Owin.Securit
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Microsoft.Web.Infrastructure.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Newtonsoft.Json.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Owin.dll
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\SimplifySDK.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Net.Http.Formatting.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.Helpers.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.Http.dll
@@ -31,7 +32,6 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.WebPages.De
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.WebPages.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.WebPages.Razor.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\WebGrease.dll
-C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Newtonsoft.Json.xml
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Net.Http.Formatting.xml
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.Helpers.xml
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.Http.xml
@@ -58,6 +58,15 @@ C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Microsoft.Owin.Securit
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\System.Web.Http.Owin.xml
-C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csprojResolveAssemblyReference.cache
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.first.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csproj.GenerateResource.Cache
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.dll
 C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.pdb
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\bin\Newtonsoft.Json.xml
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.cart.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.carts.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.procuts.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.invoice.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.customer.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.Migrations.removecard.resources
+C:\Hack\Hackathon-Masters-of-Code\web\HackAPI\HackAPI\obj\Debug\HackAPI.csprojResolveAssemblyReference.cache
