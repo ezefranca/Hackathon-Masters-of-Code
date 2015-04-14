@@ -37,14 +37,14 @@
     
 }
 
--(void)signInWithSucessBlock:(LoginUser *)newUser successBlock:(void (^)())successBlock errorBlock:(void (^)(NSError *error))errorBlock {
+-(void)signInWithSucessBlock:(NSDictionary *)cadastro successBlock:(void (^)())successBlock errorBlock:(void (^)(NSError *error))errorBlock {
     
-    NSDictionary *data = [[NSDictionary alloc]init];
-    NSString *username = newUser.userName;
-    NSString *password = newUser.userPass;
-    data = @{ @"UserName": username, @"Password": password};
+//    NSDictionary *data = [[NSDictionary alloc]init];
+//    NSString *username = newUser.userName;
+//    NSString *password = newUser.userPass;
+//    data = @{ @"UserName": username, @"Password": password};
     
-    [self performRequestWithoutMappingWithParams:data method:MCRequestersMethodPOST path:POST_CADASTRO withSuccesBlock:^(id responseObject) {
+    [self performRequestWithoutMappingWithParams:cadastro method:MCRequestersMethodPOST path:POST_CADASTRO withSuccesBlock:^(id responseObject) {
         if (successBlock) {
             successBlock();
             NSLog(@"%@", responseObject);

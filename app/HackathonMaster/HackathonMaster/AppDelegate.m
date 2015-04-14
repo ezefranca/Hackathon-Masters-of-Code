@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "Mapbox.h"
+
+#define RGB(r, g, b) \
+[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 
 @interface AppDelegate ()
 
@@ -16,6 +20,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[UITabBar appearance] setTintColor:RGB(84, 154, 150)];
+    [[UITabBar appearance] setBarTintColor:RGB(11, 12, 16)];
+    [[RMConfiguration sharedInstance] setAccessToken:@"pk.eyJ1IjoianVzdGluIiwiYSI6IlpDbUJLSUEifQ.4mG8vhelFMju6HpIY-Hi5A"];
     // Override point for customization after application launch.
     return YES;
 }
